@@ -10,6 +10,10 @@ var webpack             = require("gulp-webpack");
 var webpackConfig       = require("./webpack.config.js");
 var cssnano             = require('gulp-cssnano');
 var htmlmin             = require('gulp-htmlmin');
+var connect             = require('gulp-connect');
+var plumber             = require('gulp-plumber');
+var plumberNotifier     = require('gulp-plumber-notifier');
+
 const autoprefixer      = require('gulp-autoprefixer');
 const image             = require('gulp-image');
 
@@ -34,10 +38,10 @@ gulp.task('haml', function () {
 
 // Javascript
 gulp.task("javascript", function() {
-    return gulp.src('src/js/app.js')
-        .pipe(webpack(webpackConfig))
-        .pipe(gulp.dest('build/js'))
-        .pipe(notify("Bundling done."));
+      // return gulp.src('src/js/app.js')
+      //     .pipe(webpack(webpackConfig))
+      //     .pipe(gulp.dest('build/js'))
+      //     .pipe(notify("Bundling done."));
 });
 
 // // Sass
