@@ -1,0 +1,224 @@
+@import 'constants'
+
+
+.girl-call-wr
+  .girl-call
+    display: flex
+    flex-flow: row wrap
+    flex: 1 1 auto
+    justify-content: stretch
+    align-items: center
+    .girl-call-image-wr
+      // max-width: 50%
+      padding: $gutter
+      box-sizing: border-box
+      margin: 0 auto
+      .girl-call-image
+        background: url('/images/girl-call.jpg') 100% no-repeat
+        background-size: cover
+        box-sizing: content-box
+        min-width: 200px
+        min-height: 200px
+        border-radius: 50%
+    .girl-call-text
+      box-sizing: border-box
+      max-width: calc(100% - 235px)
+      min-width: 350px
+      h1 span, p span, p.lead span
+        padding: .25*$gutter
+        background-color: $white
+
+
+.hero-manufacture
+  // padding: 0 $gutter
+  // p.description-panel
+  //   max-width: 100%
+  //   min-width: 200px
+  //   width: 400px
+  //   padding: .5*$gutter
+  //   background-color: $charcoal
+  //   border-radius: 4px
+  //   text-align: center
+  //   font-size: .75*$gutter
+  //   i, span
+  //     color: $white
+  // .hero-text-wr
+  //   padding-top: $gutter
+  //   padding-bottom: $gutter
+  .hero-manufacture-img
+    // height: $hero-height
+    // text-align: center
+    background: url('/images/manufacture.png') 100% no-repeat
+    color: $oil
+    display: flex
+    align-items: center
+    justify-content: center
+    .hero-img-manufacture-alpha
+      background-color: rgba($white, 0.5)
+      width: 100%
+      height: inherit
+    .manufacture-flex
+      display: flex
+      align-items: center
+      flex-flow: row wrap
+
+  .hero-text-wr
+    .hero-text
+      padding-top: $gutter
+      padding-bottom: $gutter
+      h1
+        font-size: 2rem
+      p.lead
+        margin-bottom: 0
+        color: $monsoon
+        font-size: $gutter
+
+      ul.list-manufacture-goods
+        margin-left: 0
+        display: flex
+        flex-flow:  row wrap
+        justify-content: flex-start
+        li
+          i#external
+            font-size: .75*$gutter
+        li
+          margin: 0 .25*$gutter .5*$gutter 0
+          padding: .5*$gutter .5*$gutter
+          background-color: rgba($smoke, .85)
+          span
+            margin-left: .25*$gutter
+
+      ul.hero-features
+        padding: $gutter
+        margin-left: 0
+        background-color: rgba($white, 0.9)
+        border: 2px solid rgba($primary-color, .7)
+        li
+          margin-bottom: $gutter
+          .hero-features-icon-wr
+            position: relative
+            i
+              position: absolute
+              top: 0.5*$gutter
+              left: 0.5*$gutter
+              color: darken($primary-color, 15%)
+              font-size: 1.8*$gutter
+
+          span
+            display: block
+          span.feature-title
+            color: darken($primary-color, 15%)
+            font-size: 1.25*$gutter
+          span.feature-text
+            font-size: .75*$gutter
+
+
+
+
+  h1#manufacture
+    margin-bottom: $gutter
+  h3#manufacture
+    font-size: 1.5*$gutter
+    margin-bottom: 0.1*$gutter
+  #ecology
+    color: $success-color
+
+  ul.contacts
+    margin-left: 0
+  ul.list-manufacture
+    margin-left: 0
+    span
+      background-color: rgba(#fff, 1.25)
+    i
+      color: $success-color
+    i#reverse-top-down
+      -webkit-transform: rotate(-180deg)
+      -moz-transform: rotate(-180deg)
+      -ms-transform: rotate(-180deg)
+      -o-transform: rotate(-180deg)
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=6)
+
+.manufacture-header
+  font-size: 1.75*$gutter
+  text-align: center
+  // margin-top: 3*$gutter
+
+.manufacture-text-partner
+  margin-bottom: 0
+  text-align: center
+  margin-bottom: 3*$gutter
+  p
+    color: $charcoal
+    margin-bottom: 0
+//
+p.manufacture-desc
+  margin-bottom: 0.5*$gutter
+p.manufacture-desc:last-child
+  margin-bottom: 0
+
+
+ul.manufacture-advantage
+  $padding-tb-manuf: 3*$gutter
+  // padding-top: $padding-tb-manuf
+  li
+    // position: relative
+    padding-bottom: $padding-tb-manuf
+    i
+      // position: absolute
+      // left: -2*$gutter
+      padding-top:  .25*$gutter
+      font-size: 2*$gutter
+      color: $warning-color
+    h4
+      color: $oil
+
+.manufacture-partner-block
+  padding-top: 2*$gutter
+
+.product-container
+  h3.product-header
+    font-size: $gutter
+    color: $primary-color
+  // .products-list:last-child
+  //   margin-bottom: 2*$gutter
+  table
+    border: none
+    background-color: rgba($white, .2)
+    thead
+      tr th, tr td
+        background-color: darken($primary-color, 5%)
+    tr th, tr td
+      color: $white
+
+    tr:nth-child(even)
+      background-color: rgba($primary-color, .2)
+
+  .products-list
+    display: flex
+    flex-flow: row wrap
+    .product-item#special
+      .size
+        font-weight: bold
+    .product-item
+      flex: 2 2 50%
+      min-width: 500px
+      padding-right: $gutter
+      margin-bottom: $gutter
+      font-size: .85*$gutter
+      font-family: $font-family-monospace
+      div
+        // display: inline
+        margin-right: $gutter
+      .name
+        font-weight: bold
+      .sizes
+        .size
+          display: inline-block
+
+      .thickness
+
+      .type
+
+      .amount
+
+      .details

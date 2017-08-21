@@ -1,0 +1,216 @@
+@import 'constants'
+@import 'reset'
+@import 'vendor/foundation.min'
+@import 'products'
+@import 'catalog'
+@import 'index'
+@import 'contacts'
+
+
+html
+  box-sizing: border-box
+  height: 100%
+
+*, *:before, *:after
+  box-sizing: inherit
+
+$paddings-top-bottom: 4*$gutter
+
+h1.header-on-dark, h2.header-on-dark, h3.header-on-dark,
+h4.header-on-dark, h5.header-on-daКrk, h6.header-on-dark
+  color: $white
+
+.fullwidth
+  width: 100%
+
+.nopaddings
+  padding: 0 !important
+.nomargins
+  margin: 0 !important
+.row-block
+  margin: 0 auto
+  padding-top: $paddings-top-bottom
+  padding-bottom: $paddings-top-bottom
+  max-width: 100%
+
+a.link-on-primary
+  color: $smoke
+  text-decoration: underline
+
+.dark-background
+  padding-top: $paddings-top-bottom
+  padding-bottom: $paddings-top-bottom
+  background-color: $oil
+  color: $white
+
+.blue-background
+  $paddings-top-bottom: 2*$gutter
+  padding-top: $paddings-top-bottom
+  padding-bottom: $paddings-top-bottom
+  background-color: $primary-color
+  color: $white
+  text-align: center
+  h1, h2, h3
+    color: $white
+    margin-bottom: 2*$gutter
+  ul
+    margin-left: 0
+  ul.phones
+    font-size: 1*$gutter
+    font-weight: bold
+    line-height: 1.5*$gutter
+    a
+      color: $white
+    a:hover
+      color: $white
+
+  ul.address
+    font-size: 1.5*$gutter
+    font-weight: bold
+    line-height: 2*$gutter
+    a.small-sub
+      font-size: $gutter
+      color: $white
+      font-weight: normal
+    a.small-sub:hover
+      color: $white
+
+  ul.social
+    li
+      margin-bottom: $gutter
+      a
+        color: $white
+        img.soc-inst
+          width: 8*$gutter
+  p.contacts-text
+    max-width: 500px
+    margin-left: auto
+    margin-right: auto
+
+.offer-card
+  h3.offer
+    font-size: $gutter
+    // color: $alert-color
+    color: $warning-color
+  .yellow-offer
+    color: $warning-color
+  ul.offer-text
+    color: $white
+    margin-left: 0
+
+hr.contacts-block
+  height: 2px
+  width: 10*$gutter
+  background-color: $white
+  margin: 1.5*$gutter auto
+
+a.navbar-phone
+  color: $alert-color !important
+  font-weight: bold !important
+  font-size: 1*$gutter !important
+
+a.navbar-email
+  color: $primary-color !important
+  font-weight: bold !important
+  font-size: .8*$gutter !important
+
+
+.navbar-text-addr
+  margin-right: $gutter
+
+section.top-bar-section ul li
+  background: $invisible
+
+.brand
+  img.brand-img
+    padding: 0.5*$gutter 0 0.5*$gutter $gutter
+    box-sizing:content-box
+    height: 6rem
+
+  h1.brand-name
+    display: inline
+    margin-left: 0.5*$gutter
+    font-size: 1.4rem
+
+
+
+
+
+.row-large
+  width: 100%
+  margin: 0 auto
+
+$light-gray: $invisible
+$medium-gray: $tuatara
+$product-feature-section-large-width: 75%
+$product-feature-section-bg: $light-gray
+$product-feature-section-divider-color: $medium-gray
+
+.product-feature-section
+  background: $product-feature-section-bg
+  padding: 1rem
+
+
+.product-feature-section-outer
+  display: flex
+  max-width: 100%
+  margin: 0 auto
+  flex-direction: column
+
+  // @include breakpoint(medium)
+  //   max-width: $product-feature-section-large-width
+
+
+
+.product-feature-section-headline
+  margin-bottom: 2rem
+  text-align: center
+
+
+.product-feature-section-inner
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+
+.product-feature-section-feature
+  display: flex
+  align-items: flex-start
+  padding: 1rem
+  flex: 1 0 50%
+  justify-content: flex-start
+  flex-direction: column
+
+  &.top-left
+    border-right: 1px solid $product-feature-section-divider-color
+    border-bottom: 1px solid $product-feature-section-divider-color
+
+
+  &.top-right
+    border-bottom: 1px solid $product-feature-section-divider-color
+
+
+  &.bottom-left
+    border-right: 1px solid $product-feature-section-divider-color
+
+
+  .feature-title
+    margin-bottom: 0
+    line-height: 16px
+    font-size: 0.875rem
+
+
+  .feature-desc
+    margin-bottom: 0
+
+
+  .fa
+    margin-right: 1.25rem
+    font-size: 2rem
+  //
+  //
+  // @include breakpoint(medium)
+  //   padding: 2rem
+  //   flex: 1 0 50%
+  //   justify-content: flex-start
+  //   flex-direction: row

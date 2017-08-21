@@ -1,0 +1,330 @@
+@import 'constants'
+
+.hero-about
+  .hero-about-image-wr
+    width: 500px
+    img
+
+.hero-img-alpha
+  width: 100%
+  // height: 100%
+  background-color: rgba($white, 0.85)
+
+.hero-img
+  // background: url('/images/building.jpg') 100% no-repeat
+  background-size: cover
+  // height: $hero-height
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+  .hero-container
+    display: flex
+    flex-flow: row wrap
+    align-items: center
+  .hero
+    margin-top: $gutter
+    .hero-text-wr
+      width: 100%
+      // height: 100%
+      // background-color: rgba($white, 0.2)
+      .hero-text
+        width: 100%
+        // height: 100%
+        display: block
+        text-align: left
+        // padding: 5*$gutter  $gutter $gutter 2*$gutter
+        // margin: $gutter $gutter
+        display: -webkit-flex
+        display: flex
+        align-content: center
+        -webkit-flex-direction: column
+        flex-direction: column
+        justify-content: center
+        h1
+          // margin-bottom: 2*$gutter
+          $text-shadow-size: 1px
+          $text-shadow-color: rgba($white, 0.5)
+          font-weight: bold
+          font-size: 2rem
+          text-shadow: $text-shadow-color $text-shadow-size $text-shadow-size, $text-shadow-color -1*$text-shadow-size -1*$text-shadow-size, $text-shadow-color 1*$text-shadow-size -1*$text-shadow-size, $text-shadow-color -1*$text-shadow-size 1*$text-shadow-size
+
+        h1, p
+          color: $oil
+        p.white
+          color: $white
+          line-height: 0px
+        p.lead
+          margin-bottom: 0
+        ul.hero-list
+          margin-left: 0
+          // color: $white
+          li
+            // display: inline-block
+            margin:  .5*$gutter .5*$gutter 0*$gutter 0*$gutter
+            span
+              display: inline-block
+              // background-color: rgba($oil, 0.7)
+              padding: 0.35*$gutter $gutter
+
+        ul.hero-features
+          padding: $gutter
+          margin-left: 0
+          background-color: rgba($white, 0.8)
+          border: 2px solid rgba($primary-color, .7)
+          li
+            margin-bottom: $gutter
+            .hero-features-icon-wr
+              position: relative
+              i
+                position: absolute
+                top: 0.5*$gutter
+                left: 0.5*$gutter
+                color: darken($primary-color, 15%)
+                font-size: 1.8*$gutter
+
+            span
+              display: block
+            span.feature-title
+              color: darken($primary-color, 15%)
+              font-size: 1.25*$gutter
+            span.feature-text
+              font-size: .75*$gutter
+
+
+
+.about-company
+  padding-top: $gutter
+  padding-bottom: $gutter
+  .about-pads
+    padding-top: 2*$gutter
+  .subheader
+    color: $charcoal
+    margin-bottom: 0
+  h2
+    margin-top: 0
+  ul.partners-type-list
+    padding: $gutter
+    li
+      padding: $gutter 2*$gutter
+      text-align: center
+      .icon-wr
+        font-size: 2*$gutter
+        color: $warning-color
+        margin-bottom: $gutter
+
+      span.description
+        font-size: bold
+
+
+/* MailChimp Form Embed Code - Classic - 12/17/2015 v10.7
+
+#mc_embed_signup
+  form
+    display: block
+    position: relative
+    text-align: left
+    padding: 10px 0 10px 3%
+  h2
+    font-weight: bold
+    padding: 0
+    margin: 0 0 $gutter 0
+    font-size: 1.4em
+  label
+    color: $white
+  input
+    // border: 1px solid #ABB0B2
+    // -webkit-border-radius: 3px
+    // -moz-border-radius: 3px
+    // border-radius: 3px
+    // &[type=checkbox]
+    //   -webkit-appearance: checkbox
+    // &[type=radio]
+    //   -webkit-appearance: radio
+    // &:focus
+    //   border-color: #333
+  // .button
+  //   clear: both
+  //   background-color: #aaa
+  //   border: 0 none
+  //   border-radius: 4px
+  //   transition: all 0.23s ease-in-out 0s
+  //   color: #FFFFFF
+  //   cursor: pointer
+  //   display: inline-block
+  //   font-size: 15px
+  //   font-weight: normal
+  //   height: 32px
+  //   line-height: 32px
+  //   margin: 0 5px 10px 0
+  //   padding: 0 22px
+  //   text-align: center
+  //   text-decoration: none
+  //   vertical-align: top
+  //   white-space: nowrap
+  //   width: auto
+  //   &:hover
+  //     background-color: #777
+  .small-meta
+    font-size: 11px
+  .nowrap
+    white-space: nowrap
+  .mc-field-group
+    clear: left
+    position: relative
+    width: 96%
+    padding-bottom: 3%
+    min-height: 50px
+  .size1of2
+    clear: none
+    float: left
+    display: inline-block
+    width: 46%
+    margin-right: 4%
+
+* html #mc_embed_signup .size1of2
+  margin-right: 2%
+  /* Fix for IE6 double margins.
+
+#mc_embed_signup
+  .mc-field-group
+    label
+      display: block
+      margin-bottom: 3px
+    input
+      display: block
+      width: 100%
+      padding: 8px 0
+      text-indent: 2%
+    select
+      display: inline-block
+      width: 99%
+      padding: 5px 0
+      margin-bottom: 2px
+  .datefield, .phonefield-us
+    padding: 5px 0
+  .datefield input
+    display: inline
+    width: 60px
+    margin: 0 2px
+    letter-spacing: 1px
+    text-align: center
+    padding: 5px 0 2px 0
+  .phonefield-us
+    input
+      display: inline
+      width: 60px
+      margin: 0 2px
+      letter-spacing: 1px
+      text-align: center
+      padding: 5px 0 2px 0
+    .phonearea input, .phonedetail1 input
+      width: 40px
+  .datefield
+    .monthfield input, .dayfield input
+      width: 30px
+    label
+      display: none
+  .phonefield-us label
+    display: none
+  .indicates-required
+    text-align: right
+    font-size: 11px
+    margin-right: 4%
+  .asterisk
+    color: #e85c41
+    font-size: 150%
+    font-weight: normal
+    position: relative
+    top: 5px
+  .clear
+    clear: both
+  .mc-field-group.input-group
+    ul
+      margin: 0
+      padding: 5px 0
+      list-style: none
+      li
+        display: block
+        padding: 3px 0
+        margin: 0
+    label
+      display: inline
+    input
+      display: inline
+      width: auto
+      border: none
+  div
+    &#mce-responses
+      float: left
+      top: -1.4em
+      padding: 0em .5em 0em .5em
+      overflow: hidden
+      width: 90%
+      margin: 0 5%
+      clear: both
+    &.response
+      margin: 1em 0
+      padding: 1em .5em .5em 0
+      font-weight: bold
+      float: left
+      top: -1.5em
+      z-index: 1
+      width: 80%
+  #mce-error-response
+    display: none
+  #mce-success-response
+    color: #529214
+    display: none
+  label.error
+    display: block
+    float: none
+    width: auto
+    margin-left: 1.05em
+    text-align: left
+    padding: .5em 0
+
+#mc-embedded-subscribe
+  clear: both
+  width: auto
+  display: block
+  margin: 1em 0 1em 5%
+
+#mc_embed_signup
+  #num-subscribers
+    font-size: 1.1em
+    span
+      padding: .5em
+      border: 1px solid #ccc
+      margin-right: .5em
+      font-weight: bold
+  #mc-embedded-subscribe-form
+    div.mce_inline_error
+      display: inline-block
+      margin: 2px 0 1em 0
+      padding: 5px 10px
+      background-color: rgba(255, 255, 255, 0.85)
+      -webkit-border-radius: 3px
+      -moz-border-radius: 3px
+      border-radius: 3px
+      font-size: 14px
+      font-weight: normal
+      z-index: 1
+      color: #e85c41
+    input.mce_inline_error
+      border: 2px solid #e85c41
+
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// //
