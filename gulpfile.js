@@ -24,7 +24,7 @@ var paths = {
     scss:    ['src/css/**/*.scss'],
     style:   ['src/css/**/*'],
     copy:    ['src/copy/*'],
-    haml:    ['src/**/*.haml'],
+    haml:    ['src/pages/**/*.haml'],
     images:  ['src/images/**/*']
 };
 

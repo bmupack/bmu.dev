@@ -23,8 +23,8 @@ var paths = {
     sass:    ['src/css/**/*.sass'],
     scss:    ['src/css/**/*.scss'],
     style:   ['src/css/**/*'],
-    copy: ['src/copy/*'],
-    haml:    ['src/**/*.haml'],
+    copy:    ['src/copy/*'],
+    haml:    ['src/pages/**/*.haml'],
     images:  ['src/images/**/*']
 };
 
