@@ -266,24 +266,6 @@
     -#         упаковочными материалами, хозяйственно-бытовой и канцелярской продукцией, а так же сувенирами, праздничной, интерьерной и декоративной продукцией!
 
 
-    .row-block
-      .row
-        .large-3.columns
-          %h2 О компании
-        .large-9.columns
-          %p
-            %strong
-              Мы —
-              %a{:href => "/production.html"} производственная
-            компания.
-            %strong Богатый Мир Упаковки
-            обеспечивает города
-            упаковочными материалами, хозяйственно-бытовой и канцелярской продукцией, а так же сувенирами, праздничной, интерьерной и декоративной продукцией!
-            %br
-            %a{:href => "/catalog.html"}
-              %i.fa.fa-list
-              %b Каталог
-
     .row-large
       .row.about-company
         .large-3.medium-12.small-12.columns
@@ -326,6 +308,26 @@
                 %i.fa.fa-industry
               %span.description Производства
 
+
+    .row-block
+      .row
+        .large-12.columns
+          %h2.text-center О компании
+          %p.text-center
+            %strong
+              Мы —
+              %a{:href => "/production.html"} производственная
+            компания.
+            %strong Богатый Мир Упаковки
+            обеспечивает города
+            упаковочными материалами, хозяйственно-бытовыми и канцелярскими
+            %a{:href => "/catalog.html"}
+              %b товарами
+              %i.fa.fa-list
+            , а так же сувенирами, праздничной, интерьерной и декоративной
+            %a{:href => "/gift.html"}
+              продукцией!
+              %i.fa.fa-gift
 
 
 
@@ -925,7 +927,9 @@
     -#       %strong сувениров
     -#       .
     -#       Множество компаний по достоинству оценили продукцию компании Богатый Мир Упаковки, присоединяйтесь и Вы!
-
+    -# .row
+    -#   .columns.large-12
+    -#     %p Пакеты в 53 регионе
     %script{"data-dojo-config" => "usePlainJson: true, isDebug: false", :src => "//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js", :type => "text/javascript"}
     :javascript
       require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"42fad91015d9344b12e8586c6","lid":"b4dc660367"}) })
