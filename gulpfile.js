@@ -12,7 +12,7 @@ var htmlmin             = require('gulp-htmlmin');
 var connect             = require('gulp-connect');
 var plumber             = require('gulp-plumber');
 var plumberNotifier     = require('gulp-plumber-notifier');
-
+var pug = require('gulp-pug');
 
 const autoprefixer      = require('gulp-autoprefixer');
 const image             = require('gulp-image');
@@ -25,25 +25,11 @@ var paths = {
     style:   ['src/css/**/*'],
     copy:    ['src/copy/*'],
     haml:    ['src/pages/**/*.haml'],
-    images:  ['src/images/**/*']
+    images:  ['src/images/**/*'],
+    views:  ['src/views/**/*.pug']
 };
 
-function onerrr(arg) {
-  console.log("err");
-  console.log("err");
-  console.log("err");
-  console.log("err");
-  console.log(arg);
-  console.log("err");
-  console.log("err");
-  console.log("err");
-  console.log("err");
-  console.log("err");
-  notify("EOOOEOEOOE")
-  console.log("err");
 
-  // body...
-}
 // HTML
 gulp.task('haml', function () {
     gulp.src(paths.haml)
@@ -114,6 +100,16 @@ gulp.task('watch', function() {
 });
 
 
+gulp.task('views', function buildHTML() {
+  return gulp.src(paths.views)
+  .pipe(pug({
+    // Your options in here.
+  }))
+  .pipe(gulp.dest('build/views'))
+
+});
+
+
 gulp.task('webserver', function() {
   connect.server({
     root: 'build',
@@ -122,4 +118,4 @@ gulp.task('webserver', function() {
   });
 });
 
-gulp.task('default', ['watch', 'javascript', 'haml', 'sass', 'image', 'copy', 'webserver']);
+gulp.task('default', ['watch', 'javascript', 'haml', 'sass', 'image', 'copy', 'views', 'webserver']);

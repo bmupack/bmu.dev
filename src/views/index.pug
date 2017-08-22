@@ -1,0 +1,234 @@
+include ../mixins/head
+
+html
+  +head
+  body
+    nav.top-bar(data-topbar="", role="navigation")
+      ul.title-area
+        li.brand.name
+          a(href="/")
+            img.brand-img(src="images/smallLogo.jpg")
+            h1.brand-name Богатый Мир Упаковки
+      section.navbar-right.top-bar-section
+        ul.right
+          li
+            a.navbar-email(href="mailto:sales@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmail'); return true;") sales@bmupack.ru
+          li
+            a.navbar-phone(href="tel:88162332132", onclick="yaCounter45549195.reachGoal('callPhone'); return true;")
+              i.fa.fa-phone
+              span +7 8162 33-21-32
+      span.hide-for-medium-down.navbar-text.hide.navbar-text-addr.right
+        | ул. Великая, 22, В. Новгород 
+        a.fa.fa-map-o(href="https://www.google.ru/maps/place/%D0%91%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D0%B9+%D0%9C%D0%B8%D1%80+%D0%A3%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8/@58.540999,31.2655603,17z/data=!3m1!4b1!4m5!3m4!1s0x46beebad91b122b3:0x3870373e95ddffb2!8m2!3d58.540999!4d31.267749?hl=ru", target="_blank", onclick="yaCounter45549195.reachGoal('openMap'); return true;")
+    .row
+      .columns.large-12
+        dl.center.sub-nav
+          dd.active
+            a(href="/") Главная
+          dd
+            a(href="/production.html") Продукция
+          dd
+            a(href="/catalog.html") Каталог
+          dd
+            a(href="/gift.html") Подарки
+          dd
+            a(href="/contacts.html") Контакты
+    #hero-img.hero-about.hero-img.row-large
+      .hero-img-alpha
+        .hero-container.row
+          .columns.large-8
+            .hero
+              .hero-text-wr
+                .hero-text
+                  p.lead
+                    small Более 20 лет
+                    br
+                    | Снабжаем Москву, Санкт-Петербург и города СЗФО
+                  h1 Богатый Мир Упаковки
+                  p
+                    strong
+                      a(href="/production.html") Производство
+                      |  и 
+                      a(href="/catalog.html") Торговля
+                  .button-group.radius
+                    a.button.small(href="tel:88162332132", onclick="yaCounter45549195.reachGoal('callPhone'); return true;")
+                      i.fa.fa-phone
+                      b Позвонить +7 (8162) 33-21-32
+                    a.button.small(href="/catalog.html")
+                      i.fa.fa-list
+                      b Посмотреть каталог
+          .columns.large-4
+            .hero
+              .hero-text-wr
+                .hero-text
+                  ul.hero-features
+                    li.row
+                      .columns.large-2.small-2
+                        .hero-features-icon-wr
+                          i.fa.fa-ship
+                      .columns.large-10.small-10
+                        span.feature-title
+                          b Бесплатная
+                          |  доставка
+                        span.feature-text
+                          | При заказе от 2'000 
+                          i.fa.fa-rub
+                          |  по Новгороду
+                          br
+                          | При заказе от 5'000 
+                          i.fa.fa-rub
+                          |  по области
+                          br
+                          | При заказе от 100'000 
+                          i.fa.fa-rub
+                          |  в другие города
+                    li.row
+                      .columns.large-2.small-2
+                        .hero-features-icon-wr
+                          i.fa.fa-industry
+                      .columns.large-10.small-10
+                        span.feature-title
+                          b Производство
+                        span.feature-text
+                          | Собственная 
+                          a(href="/production.html") линия производства 
+                          | фасовочных пакетов ПНД
+                    li.row
+                      .columns.large-2.small-2
+                        .hero-features-icon-wr
+                          i.fa.fa-list
+                      .columns.large-10.small-10
+                        span.feature-title Товары
+                        span.feature-text
+                          | Более 3'500 
+                          a(href="/catalog.html") товаров 
+                          | для оптовых и розничных клиентов
+                    li.row
+                      .columns.large-2.small-2
+                        .hero-features-icon-wr
+                          i.fa.fa-credit-card
+                      .columns.large-10.small-10
+                        span.feature-title Цены и Оплата
+                        span.feature-text
+                          | Индивидуальные скидки для оптовых клиентов. Принимаем наличные и безналичные платежи
+    .row-large
+      .about-company.row
+        .columns.large-3.medium-12.small-12
+          .about-pads
+            p.subheader Реальный сектор экономики.
+            h2 Значимость
+            p Мы создаем условия для работы в различных секторах жизни и экономики.
+        .columns.large-9.medium-12.small-12
+          ul.large-block-grid-4.partners-type-list.small-block-grid-2
+            li
+              .icon-wr
+                i.fa.fa-shopping-basket
+              span.description Торговые сети и магазины
+            li
+              .icon-wr
+                i.fa.fa-medkit
+              span.description Медицина
+            li
+              .icon-wr
+                i.fa.fa-id-card
+              span.description Государственные учреждения
+            li
+              .icon-wr
+                i.fa.fa-cutlery
+              span.description Рестораны, бары и кафе
+            li
+              .icon-wr
+                i.fa.fa-crop
+              span.description Сельское хозяйство
+            li
+              .icon-wr
+                i.fa.fa-paint-brush
+              span.description Клиринговые компании
+            li
+              .icon-wr
+                i.fa.fa-magic
+              span.description Развлечения
+            li
+              .icon-wr
+                i.fa.fa-industry
+              span.description Производства
+    .row-block
+      .row
+        .columns.large-12
+          h2.text-center О компании
+          p.text-center
+            strong
+              | Мы — 
+              a(href="/production.html") производственная
+            | компания. 
+            strong Богатый Мир Упаковки
+            |  обеспечивает города упаковочными материалами, хозяйственно-бытовыми и канцелярскими 
+            a(href="/catalog.html")
+              b товарами
+              i.fa.fa-list
+            | , а так же сувенирами, праздничной, интерьерной и декоративной 
+            a(href="/gift.html")
+              | продукцией! 
+              i.fa.fa-gift
+    .blue-background.row-large
+      .row
+        .columns.large-7
+          h3.text-center Контакты
+          ul.address
+            li Великий Новгород
+            li Улица Великая, 22
+            li
+              a.small-sub(href="https://www.google.ru/maps/place/%D0%91%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D0%B9+%D0%9C%D0%B8%D1%80+%D0%A3%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8/@58.540999,31.2655603,17z/data=!3m1!4b1!4m5!3m4!1s0x46beebad91b122b3:0x3870373e95ddffb2!8m2!3d58.540999!4d31.267749?hl=ru", target="_blank", onclick="yaCounter45549195.reachGoal('openMap'); return true;") Открыть в картах
+          ul.phones
+            li
+              a(href="tel:+78162332131", onclick="yaCounter45549195.reachGoal('callPhone'); return true;") +7 8162 33 - 21 - 31
+            li
+              a(href="tel:+78162332132", onclick="yaCounter45549195.reachGoal('callPhone'); return true;") +7 8162 33 - 21 - 32
+            li
+              a(href="tel:+78162332133", onclick="yaCounter45549195.reachGoal('callPhone'); return true;") +7 8162 33 - 21 - 33
+          ul.center.social
+            li
+              a(href="https://www.instagram.com/bmupack", target="_blank", onclick="yaCounter45549195.reachGoal('openSocialInstagram'); return true;")
+                img.soc-inst.social(src="images/instagram.png")
+            li
+              a(href="https://vk.com/bmupack", target="_blank", onclick="yaCounter45549195.reachGoal('openSocialVK'); return true;")
+                img.social(src="images/vklogo.svg")
+          ul.email.phones
+            li
+              a(href="mailto:sales@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmail'); return true;") sales@bmupack.ru
+          ul.worktime
+            li
+              strong 9:00 - 17.00
+              |  — Будни
+            li
+              strong 9:00 - 14.00
+              |  — Суббота
+            li
+              strong Выходной
+              |  — Воскресенье
+        .columns.large-5
+          #mc_embed_signup
+            form#mc-embedded-subscribe-form.validate(action="//space.us13.list-manage.com/subscribe/post?u=42fad91015d9344b12e8586c6&id=b4dc660367", method="post", name="mc-embedded-subscribe-form", novalidate="novalidate", target="_blank")
+              #mc_embed_signup_scroll
+                h2 Получить прайс
+                p Оставьте свои контакты и мы отправим прайс-лист
+                .mc-field-group
+                  label(for="mce-EMAIL")
+                    | Email 
+                    span.asterisk *
+                  input#mce-EMAIL.email.required(aria-required="true", name="EMAIL", placeholder="email@example.com", type="email", value="")
+                .mc-field-group
+                  label(for="mce-MMERGE3")
+                    | Телефон 
+                    span.asterisk *
+                  input#mce-MMERGE3(aria-required="true", name="MMERGE3", placeholder="+7 (000) 1234-567", required="true", type="text", value="")
+                .mc-field-group
+                  label(for="mce-LNAME") Имя
+                  input#mce-LNAME(name="LNAME", placeholder="Иван Иванов", type="text", value="")
+                #mce-responses.clear
+                  #mce-error-response.response(style="display:none")
+                  #mce-success-response.response(style="display:none")
+                div(aria-hidden="true", style="position: absolute; left: -5000px")
+                  input(name="b_42fad91015d9344b12e8586c6_b4dc660367", tabindex="-1", type="text", value="")
+                .clear
+                  input.button.expand.success(name="subscribe", type="submit", value="Заказать звонок")
