@@ -12,7 +12,8 @@ var htmlmin             = require('gulp-htmlmin');
 var connect             = require('gulp-connect');
 var plumber             = require('gulp-plumber');
 var plumberNotifier     = require('gulp-plumber-notifier');
-var pug = require('gulp-pug');
+var pug                 = require('gulp-pug');
+var data                = require('gulp-data');
 
 const autoprefixer      = require('gulp-autoprefixer');
 const image             = require('gulp-image');
@@ -27,7 +28,8 @@ var paths = {
     haml:    ['src/pages/**/*.haml'],
     images:  ['src/images/**/*'],
     views:   ['src/views/**/*.pug'],
-    mixins:  ['src/mixins/**/*.pug']
+    mixins:  ['src/mixins/**/*.pug'],
+    data:    ['src/data/data.json']
 };
 
 
@@ -99,14 +101,16 @@ gulp.task('watch', function() {
     gulp.watch(paths.style, ['scss']);
     gulp.watch(paths.views, ['views']);
     gulp.watch(paths.mixins, ['views']);
+    gulp.watch(paths.data, ['views']);
 });
 
-
 gulp.task('views', function buildHTML() {
+
   return gulp.src(paths.views)
-  .pipe(pug({
-    // Your options in here.
+  .pipe(data(function (file) {
+      return require('./' +paths.data[0]);
   }))
+  .pipe(pug({}))
   .pipe(gulp.dest('build/'))
 
 });

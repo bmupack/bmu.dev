@@ -1,0 +1,7 @@
+mixin catalogList(category)
+  each subcategory in category
+    p= subcategory.subcategory
+    each item in subcategory.items
+      p 
+       span= item.name
+       span= item.description
