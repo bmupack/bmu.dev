@@ -26,7 +26,8 @@ var paths = {
     copy:    ['src/copy/*'],
     haml:    ['src/pages/**/*.haml'],
     images:  ['src/images/**/*'],
-    views:  ['src/views/**/*.pug']
+    views:   ['src/views/**/*.pug'],
+    mixins:  ['src/mixins/**/*.pug']
 };
 
 
@@ -96,7 +97,8 @@ gulp.task('watch', function() {
     gulp.watch(paths.scss, ['scss']);
     gulp.watch(paths.images, ['image']);
     gulp.watch(paths.style, ['scss']);
-
+    gulp.watch(paths.views, ['views']);
+    gulp.watch(paths.mixins, ['views']);
 });
 
 
@@ -105,7 +107,7 @@ gulp.task('views', function buildHTML() {
   .pipe(pug({
     // Your options in here.
   }))
-  .pipe(gulp.dest('build/views'))
+  .pipe(gulp.dest('build/'))
 
 });
 
@@ -118,4 +120,5 @@ gulp.task('webserver', function() {
   });
 });
 
-gulp.task('default', ['watch', 'javascript', 'haml', 'sass', 'image', 'copy', 'views', 'webserver']);
+// gulp.task('default', ['watch', 'javascript', 'haml', 'sass', 'image', 'copy', 'views', 'webserver']);
+gulp.task('default', ['watch', 'javascript', 'sass', 'image', 'copy', 'views', 'webserver']);

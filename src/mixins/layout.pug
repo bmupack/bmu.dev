@@ -1,0 +1,12 @@
+include ../mixins/head
+include ../mixins/topbar
+include ../mixins/topbarsub 
+include ../mixins/scripts-bottom 
+
+html
+  +head
+  +topbar
+  +topbarsub
+  body
+    block content
+    +scripts-bottom

@@ -1,0 +1,88 @@
+extends ../mixins/layout
+
+block content
+  .contacts-block-wr
+    .contacts-block
+      .row
+        .columns.large-12
+          h1 Контакты
+  .contacts-block-wr.dark-background
+    .contacts-block
+      .row
+        .columns.large-6.medium-12.small-12
+          h3.header-on-dark Прийти
+          ul.contacts-list
+            li.row
+              .column.large-1.small-1
+                .contacts-icon
+                  i.fa.fa-map-o
+              .column.large-11.small-11
+                .contacts-geoposition
+                  span.text В. Новгород, ул. Великая, 22
+                  p
+                    a.small-sub(href="https://www.google.ru/maps/place/%D0%91%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D0%B9+%D0%9C%D0%B8%D1%80+%D0%A3%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8/@58.540999,31.2655603,17z/data=!3m1!4b1!4m5!3m4!1s0x46beebad91b122b3:0x3870373e95ddffb2!8m2!3d58.540999!4d31.267749?hl=ru", target="_blank", onclick="yaCounter45549195.reachGoal('openMap'); return true;") Открыть в картах
+                  ul
+                    li
+                      strong 9:00 - 17.00
+                      |  — Будни
+                    li
+                      strong 9:00 - 14.00
+                      |  — Суббота
+                    li
+                      strong Выходной
+                      |  — Воскресенье
+          h3.header-on-dark Позвонить
+          .row
+            .column.large-1.small-1
+              .contacts-icon
+                i.fa.fa-phone
+            .column.large-11.small-11
+              p Отделы продаж
+              ul.contacts-list
+                li
+                  a(href="tel:+78162332131", onclick="yaCounter45549195.reachGoal('callPhone'); return true;") +7 (8162) 33-21-31
+                  span.text Физические лица, розница
+                li
+                  a(href="tel:+78162332132", onclick="yaCounter45549195.reachGoal('callPhone'); return true;") +7 (8162) 33-21-32
+                  span.text Корпоративные клиенты
+                li
+                  a(href="tel:+78162332133", onclick="yaCounter45549195.reachGoal('callPhone'); return true;") +7 (8162) 33-21-33
+                  span.text Заказы на производство
+          h3.header-on-dark Написать
+          ul.contacts-list
+            li.row
+              .column.large-1.small-1
+                .contacts-icon
+                  i.fa.fa-envelope-o
+              .column.large-11.small-11
+                ul.contacts-list
+                  li
+                    span.text sales@bmupack.ru
+                    a(href="mailto:sales@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmail'); return true;") Отправить заявку
+                  li
+                    span.text feedback@bmupack.ru
+                    a(href="mailto:feedback@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmail'); return true;") Отправить отзыв
+                  li
+                    span.text offer@bmupack.ru
+                    a(href="mailto:offer@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmail'); return true;") Отправить коммерческое предложение
+          h3.header-on-dark Следить в социальных сетях
+          ul.contacts-list
+            li.row
+              .column.large-1.small-1
+                .contacts-icon
+                  i.fa.fa-user-o
+              .column.large-11.small-11
+                ul.contacts-social-list
+                  li
+                    a(href="https://www.instagram.com/bmupack", target="_blank", onclick="yaCounter45549195.reachGoal('openSocialInstagram'); return true;")
+                      img.soc-inst.social(src="images/instagram.png")
+                      |  Страница в Instagram
+                  li
+                    a(href="https://vk.com/bmupack", target="_blank", onclick="yaCounter45549195.reachGoal('openSocialVK'); return true;")
+                      img.soc-vk.social(src="images/vklogo.svg")
+                      |  Группа ВКонтакте
+        .columns.large-6.medium-12.small-12
+          iframe(allowfullscreen="", frameborder="0", height="400", style="border:0", width="100%", src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2082.2395285459193!2d31.267748996615403!3d58.5409991576875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x3870373e95ddffb2!2z0JHQvtCz0LDRgtGL0Lkg0JzQuNGAINCj0L_QsNC60L7QstC60Lg!5e0!3m2!1sru!2sru!4v1440323882632")
+  script(data-dojo-config="usePlainJson: true, isDebug: false", src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js", type="text/javascript")
+  script.
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"42fad91015d9344b12e8586c6","lid":"b4dc660367"}) })

@@ -1,0 +1,17 @@
+include ../mixins/head
+include ../mixins/topbar
+include ../mixins/topbarsub 
+include ../mixins/sidebar 
+include ../mixins/scripts-bottom 
+
+html
+  +head
+  +topbar
+  +topbarsub
+  body
+    .row
+      .columns.large-3
+          +sidebar
+      .columns.large-9
+          block content
+    +scripts-bottom

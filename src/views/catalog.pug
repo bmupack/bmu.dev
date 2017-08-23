@@ -1,638 +1,624 @@
-include ../mixins/head
-include ../mixins/sidebar
-include ../mixins/topbar
-include ../mixins/topbarsub
-include ../mixins/scripts-bottom
-html
-  +head
-  body
-    +topbar
-    +topbarsub
- 
+extends ../mixins/catalog
+
+block content
+  .catalog-hero
+    .catalog-hero-image-wr
+      .catalog-hero-image
     .row
-      .columns.large-3
-        +sidebar
-      .columns.large-9
-        .catalog-hero
-          .catalog-hero-image-wr
-            .catalog-hero-image
-          .row
-            .columns.large-12
-              h1.text-center Каталог
-              p.text-center
-                | Осуществляем доставку. У нас более 3'500 товаров.
-                br
-                | За прайс-листом обращайтесь к нашим Менеджерам!
-              p.text-center
-                | Для оптовых заказов предлагаем 
-                b индивидуальные цены.
-        .row
-          .columns.large-12
-            p Более 3500 товаров по отличным ценам!
-            p
-              span.alert.label.radius
-                i.fa.fa-gear
-              |  — собственное производство
-        .row
-          .columns.large-12
-            h3 Упаковочные материалы
-            ul.large-block-grid-2.medium-block-grid-2.small-block-grid-1
-              li.offer-card
-                h3.offer Пакеты фасовочные
-                ul.offer-text
-                  li
-                    | Пакеты в рулонах ПНД 
-                    a(href="/production.html")
-                      span.alert.label.radius
-                        i.fa.fa-gear
-                  li
-                    | Пакеты для мусора 
-                    a(href="/production.html")
-                      span.alert.label.radius
-                        i.fa.fa-gear
-                  li
-                    | Пакеты Фасовочные ПНД 
-                    a(href="/production.html")
-                      span.alert.label.radius
-                        i.fa.fa-gear
-                  li Пакеты Фасовочные ПВД
-                  li Пакеты Бумажные (крафт)
-                  li Пакеты Zip-lock (грипперы)
-              li.offer-card
-                h3.offer Пакеты
-                ul.offer-text
-                  li
-                    | Пакеты для мусора в рулонах 
-                    a(href="/production.html")
-                      span.alert.label.radius
-                        i.fa.fa-gear
-                  li Пакеты для мусора биоразлагаемые
-                  li Пакеты «Майка» ПВД (LDPE)
-                  li Пакеты «Майка» ПНД (HDPE)
-                  li Пакеты с Пластиковой ручкой
-                  li Пакеты с Вырубной ручкой
-                  li Пакеты с Петлевой ручкой
-                  li Пакеты с Петлевой ручкой бумажные
-                  li Пакеты для колес
-              li.offer-card
-                h3.offer Мешки и сетки
-                ul.offer-text
-                  li Мешки полипропиленовые
-                  li Мешки бумажные
-                  li Сетка-мешок
-                  li Сетка-рукав
-              li.offer-card
-                h3.offer Пленки
-                ul.offer-text
-                  li
-                    | Пленка стрейч 
-                    small (стретч)
-                  li Пленка пищевая
-                  li Пленка термоусадочная
-                  li Пленка ПВХ
-                  li Пленка воздушно-пузырчатая
-                  li Бумага для выпечки
-                  li Рукава и пакеты для запекания
-                  li Фольга пищевая
-              li.offer-card
-                h3.offer Сумки
-                ul.offer-text
-                  li Сумки виниловые
-                  li Сумки джутовые
-                  li Сумки полипропиленовые
-                  li Сумки с замком
-                  li Сумки хозяйственные
-                  li Сумки Крафт
-              li.offer-card
-                h3.offer Упаковочные материалы
-                ul.offer-text
-                  li Стреп-лента и Скобы
-                  li
-                    | Скотч малярный 
-                    small (крепп)
-                  li Скотч пропилен
-                  li Скотч тканевый
-                  li Скотч двусторонний зеркальный
-                  li Скотч канцелярский
-                  li Изолента
-                  li
-                    | Лента алюминиевая 
-                    small (скотч армированный)
-                  li Лента разметочная оградительная
-              li.offer-card
-                h3.offer Устройства
-                ul.offer-text
-                  li Биркодержатели
-                  li Диспенсеры для скотча
-                  li Запайщики Импульсные
-                  li
-                    | Комбинированные устройства 
-                    small (для п/пр. ленты)
-                  li Этикет-пистолеты
-                  li Игловые пистолеты
-              li.offer-card
-                h3.offer Шпагат
-                ul.offer-text
-                  li Шпагат джутовый
-                  li Шпагат льняной
-                  li
-                    | Шпагат полипропиленовый 
-                    small (белый, цветной)
-        .row
-          .columns.large-12.text-center
-            ul.button-group.even-1
-              li
-                a.button.secondary.text-center.tiny(href="tel:88162332132", onclick="yaCounter45549195.reachGoal('callPhone'); return true;")
-                  i.fa.fa-phone
-                  b +7 (8162) 33-21-32
-              li
-                a.button.secondary.text-center.tiny(href="mailto:sales@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmail'); return true;")
-                  i.fa.fa-envelope-o
-                  b sales@bmupack.ru
-        .row
-          .columns.large-12
-            h3 Пластик и посуда
-            ul.large-block-grid-2.medium-block-grid-2.small-block-grid-1
-              li.offer-card
-                h3.offer Пластиковые емкости
-                ul.offer-text
-                  li Бутылки
-                  li Баки
-                  li Лейки
-                  li Канистры
-                  li Канистры со сливом
-                  li Тазы
-                  li Бочки
-                  li Фляги
-                  li Контейнеры для СВЧ-печей
-              li.offer-card
-                h3.offer Одноразовая посуда
-                ul.offer-text
-                  li Стаканы, чашки
-                  li Контейнеры
-                  li Тарелки пластиковые
-                  li Тарелки картонные
-                  li Скатерти
-                  li Лотки
-                  li Ложки, ножи, вилки
-                  li Салфетки
-                  li Полотенца бумажные
-                  li Платки бумажные
-                  li Свечи интерьерные
-                  li Украшения для коктейля
-              li.offer-card
-                h3.offer Мебель пластиковая
-                ul.offer-text
-                  li Столы
-                  li Кресла
-                  li
-                    | Табуреты 
-                    small (высокие, складные)
-                  li Зонты, подставки
-        .row
-          .columns.large-12
-            h3 Хозяйственные товары
-            ul.large-block-grid-2.medium-block-grid-2.small-block-grid-1
-              li.offer-card
-                h3.offer Перчатки
-                ul.offer-text
-                  li Перчатки виниловые
-                  li Перчатки нитриловые
-                  li Перчатки полушерстяные
-                  li
-                    | Перчатки латексные 
-                    small (хозяйственные)
-                  li
-                    | Перчатки резиновые 
-                    small (хозяйственные)
-                  li
-                    | Перчатки х/б 
-                    small (хлопчатобумажные, ХБ)
-                  li Рукавицы
-              li.offer-card
-                h3.offer Пластик
-                ul.offer-text
-                  li Диспенсеры, держатели для полотенец
-                  li Диспенсеры, держатели для туалетной бумаги
-                  li Диспенсеры для мыла
-                  li Салфетницы
-                  li Кружки мерные
-                  li Мыльницы
-                  li Совки
-                  li Подносы
-                  li Подставки под столовые приборы
-                  li Умывальники, рукомойники
-                  li Ящики балконные, с крышкой, кашпо
-                  li Вазоны
-                  li Вешалки
-                  li Корзины для белья
-                  li Корзины канцелярские
-                  li Корзины универсальные
-              li.offer-card
-                h3.offer Хозяйственная группа
-                ul.offer-text
-                  li Туалетная бумага
-                  li Марля медицинская
-                  li
-                    | Полотно ХП 
-                    small (холстопрошивное)
-                  li Ведра
-                  li Губки для посуды
-                  li Губки металлические
-                  li Полотно вафельное
-                  li Полотно бумажное
-                  li Салфетки вискозные
-                  li Салфетки из микрофибры
-                  li Тряпки, швабры, насадки MOP
-                  li Черенки к швабре
-                  li Лопаты снегоуборочные, Веники, Черенки
-                  li Коврики
-                  li Щетки, щетка-сметка
-              li.offer-card
-                h3.offer Средства защиты
-                ul.offer-text
-                  li Бахилы
-                  li Бахилы полиэтиленовые
-                  li Береты, пилотки
-                  li Нарукавники ПНД, ПВД
-                  li Передники ПНД, ПВД
-                  li Дождевики
-              li.offer-card
-                h3.offer Бытовая химия
-                ul.offer-text
-                  li Для мытья посуды
-                  li Для мытья стекол
-                  li Мыло жидкое
-                  li Мыло хозяйственное
-                  li Мыло туалетное
-                  li СМС (синтетические моющие средства)
-                  li СЧС (синтетические чистящие средства)
-              li.offer-card
-                h3.offer Крышки
-                ul.offer-text
-                  li Закаточные машинки
-                  li
-                    | Крышки полиэтиленовые 
-                    small (холодная, горячая)
-                  li
-                    | Крышки для консервирования 
-                    small (закаточные)
-                  li Крышки винтовые
-              li.offer-card
-                h3.offer Прочее
-                ul.offer-text
-                  li Уголь древесный
-                  li Щепа для копчения
-        .row
-          .columns.large-12.text-center
-            ul.button-group.even-1
-              li
-                a.button.secondary.text-center.tiny(href="tel:88162332132", onclick="yaCounter45549195.reachGoal('callPhone'); return true;")
-                  i.fa.fa-phone
-                  b +7 (8162) 33-21-32
-              li
-                a.button.secondary.text-center.tiny(href="mailto:sales@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmail'); return true;")
-                  i.fa.fa-envelope-o
-                  b sales@bmupack.ru
-        .row
-          .columns.large-12
-            h3 Канцелярские товары
-            ul.large-block-grid-2.medium-block-grid-2.small-block-grid-1
-              li.offer-card
-                h3.offer Ценники
-                ul.offer-text
-                  li
-                    | Этикет-лента 
-                    small (липкие)
-                  li Ценник-ролик
-                  li Ценники бумажные
-                  li Термоэтикетка
-              li.offer-card
-                h3.offer Канцелярская техника
-                ul.offer-text
-                  li Калькуляторы
-                  li Антистеплер
-                  li Дыроколы
-                  li Лотки для бумаг
-                  li Папки, регистраторы
-                  li Степлеры
-                  li Красящий валик
-              li.offer-card
-                h3.offer Бумага
-                ul.offer-text
-                  li
-                    | Чековая лента 
-                    small (44, 57, 80 мм)
-                  li
-                    | Бумага 
-                    small (SvetoCopy, Ballet, и др.)
-                  li Бумага цветная
-                  li Конверты
-                  li Копировальная бумага
-                  li Ролики для факса
-                  li Тетради
-                  li Блокноты
-              li.offer-card
-                h3.offer Письменные принадлежности
-                ul.offer-text
-                  li Ручки, Карандаши, Стержни
-                  li Скрепки, скобы
-                  li Канцелярские ножи, лезвия, ножницы
-                  li Линейки
-                  li Маркеры
-                  li Ластики
-                  li
-                    | Корректор 
-                    small Корректирующая жидкость
-              li.offer-card
-                h3.offer Канцтовары
-                ul.offer-text
-                  li Скотч канцелярский
-                  li Файлы
-                  li Закладки клейкие
-                  li Зажимы для бумаг
-                  li
-                    | Клей 
-                    small (ПВА, силикатный)
-                  li Клей карандаш
-                  li Краска штемпельная
-                  li Планшеты
-                  li
-                    | Колечки резиновые 
-                    small (для денег)
-              li.offer-card
-                h3.offer Документы
-                ul.offer-text
-                  li Книги учета
-                  li Авансовые отчеты
-                  li Ресторанные счета
-                  li Товарные чеки
-                  li Доверенности
-                  li Приходно-кассовые ордера
-                  li Расходно-кассовые ордера
-        .row
-          .columns.large-12.text-center
-            ul.button-group.even-1
-              li
-                a.button.secondary.text-center.tiny(href="tel:88162332132", onclick="yaCounter45549195.reachGoal('callPhone'); return true;")
-                  i.fa.fa-phone
-                  b +7 (8162) 33-21-32
-              li
-                a.button.secondary.text-center.tiny(href="mailto:sales@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmail'); return true;")
-                  i.fa.fa-envelope-o
-                  b sales@bmupack.ru
-        .row
-          .columns.large-12
-            h3 Оформление цветов
-            ul.large-block-grid-2.medium-block-grid-2.small-block-grid-1
-              li.offer-card
-                h3.offer Ленты
-                ul.offer-text
-                  li Лента Ажурная
-                  li Лента Аспидистр
-                  li Лента Атласная
-                  li Лента декоративная
-                  li Лента кокон
-                  li Лента кружево
-                  li Лента металлизированная
-                  li Лента органза
-                  li Лента простая
-                  li Лента Раффия
-                  li Лента с золотой полосой
-                  li Тейп лента
-              li.offer-card
-                h3.offer Упаковка для цветов
-                ul.offer-text
-                  li Фетр
-                  li Сизалевое полотно
-                  li Сизалевое волокно
-                  li Фоамиран
-                  li Гофра
-                  li Органза
-                  li Бумага
-                  li Бумага крафт
-                  li Бумага жатая
-                  li Бумага дизайнерская
-                  li Бумага ламинированная в листах
-                  li Бумага тишью
-                  li Пленка в листах
-                  li Пленка в рулоне, прозрачная
-                  li Пленка в рулоне, прозрачная с рисунком
-                  li Пленка в рулоне, тонированная
-                  li Полисилк
-              li.offer-card
-                h3.offer Оформление для цветов
-                ul.offer-text
-                  li Блестки
-                  li Бонсай
-                  li Брадсы
-                  li Булавки, Прищепки
-                  li Бусинки, Стразы
-                  li Жемчужины из гидрогеля
-                  li
-                    | Бабочки, стрекозы, шмели 
-                    small (декоративные)
-                  li Декоративные вставки
-                  li Декоративные птички
-                  li Декоративные цветы, фрукты, овощи
-                  li
-                    | Игрушки для букетов 
-                    small (свадебные)
-                  li Липучки, наклейки
-                  li Перья
-                  li
-                    | Ракушки 
-                    small (сизопласт)
-                  li
-                    | Тэги 
-                    small (картон)
-                  li Ветки с ягодами и плодами
-                  li
-                    | Искусственные цветы 
-                    small (интерьерные)
-                  li
-                    | Сухоцветы, природные материалы 
-                    small (лагурус, мох, парана стем)
-                  li Фрукты и овощи для декора и интерьера
-                  li Бусы на нити
-              li.offer-card
-                h3.offer Основы для оформления цветов
-                ul.offer-text
-                  li
-                    | Каркасы и поддоны 
-                    small (сизаль)
-                  li Удлинитель для цветов
-                  li Кашпо
-                  li Корзины
-                  li Оазисы, пена флористическая, портбукетницы
-                  li
-                    | Вазы 
-                    small (стекло, пластик)
-                  li
-                    | Шары, диски, кольца, шарики 
-                    small (пенопласт)
-                  li Лен
-                  li
-                    | Пакеты для цветов 
-                    small (конус, рукав, рюмка, салфетка)
-                  li
-                    | Сетка для цветов 
-                    small (ажурная, полифлор, рабица)
-              li.offer-card
-                h3.offer Инструменты для оформления цветов
-                ul.offer-text
-                  li Пистолет для клея и твердый клей
-                  li Шредеры для ленты
-                  li Проволока
-                  li Краска-спрей
-              li.offer-card
-                h3.offer Упаковка для оформления подарков
-                ul.offer-text
-                  li Бант-бабочка
-                  li Бант-звезда
-                  li Бант-шар
-                  li Коробка трансформер
-                  li Наполнители флористические
-                  li
-                    | Шнуры 
-                    small (бумажные, витые двухцветные)
-                  li Подарочные мешочки
-                  li Новогодние коробки-матрешки
-                  li Открытки, плакаты
-                  li Скотч двухсторонний
-                  li Сумки бумажные, ламинированные
-                  li Сумки Крафт
-                  li Сумки голографические
-        .row
-          .columns.large-12.text-center
-            ul.button-group.even-1
-              li
-                a.button.secondary.text-center.tiny(href="tel:88162332132", onclick="yaCounter45549195.reachGoal('callPhone'); return true;")
-                  i.fa.fa-phone
-                  b +7 (8162) 33-21-32
-              li
-                a.button.secondary.text-center.tiny(href="mailto:sales@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmail'); return true;")
-                  i.fa.fa-envelope-o
-                  b sales@bmupack.ru
-        .row
-          .columns.large-12
-            h3 Подарки, Декор и Оформление
-            ul.large-block-grid-2.medium-block-grid-2.small-block-grid-1
-              li.offer-card
-                h3.offer Керамика
-                ul.offer-text
-                  li Вазы
-                  li Статуэтки
-                  li Фигурки декоративные
-                  li Копилки
-                  li Ландшафтные фигуры
-              li.offer-card
-                h3.offer Наборы
-                ul.offer-text
-                  li Наборы для барбекю
-                  li Наборы для вина
-                  li Подарочные наборы
-                  li Наборы для чая
-                  li Наборы посуды
-                  li Наборы кухонного текстиля
-              li.offer-card
-                h3.offer Сувениры
-                ul.offer-text
-                  li Антистрессы
-                  li Брелоки
-                  li Зажигалки
-                  li Зеркальца
-                  li Ключницы
-                  li Книги-сейфы
-                  li Куклы декоративные
-                  li Метеостанция
-                  li Мыло-скраб
-                  li Пепельницы
-                  li Подсвечники
-                  li Подставки
-                  li Кружки, термосы
-                  li Светильники
-                  li
-                    | Свечи 
-                    small (день рождения, пасха)
-                  li Сувениры на магните
-                  li Фотоальбомы, Фоторамки
-                  li Часы
-                  li Шкатулки
-                  li Мишура
-              li.offer-card
-                h3.offer Воздушные шары
-                ul.offer-text
-                  li Шары пастель
-                  li Шары пастель экстра
-                  li Шары металлик
-                  li Шары для Моделирования
-                  li Наборы шаров с рисунком
-                  li Наборы шаров без рисунка рисунком
-                  li Насосы
-                  li Палочки
-                  li Розетки
-        .row
-          .columns.large-12
-            h3 Праздники
-            ul.large-block-grid-2.medium-block-grid-2.small-block-grid-1
-              li.offer-card
-                h3.offer Праздничная атрибутика
-                ul.offer-text
-                  li Оформление Свадьбы
-                  li Оформление Выпускного
-                  li Оформление для Новорожденного
-                  li Для Патриотов России
-                  li Гирлянды
-                  li Игры, призы
-                  li Новогодние украшения
-                  li Карнавальные принадлежности
-                  li Колпаки
-                  li Конфетти, хлопушки
-                  li Мыльные пузыри
-                  li Флаги
-                  li Язык-гудок
-              li.offer-card
-                h3.offer Оформление Свадьбы
-                ul.offer-text
-                  li Бокалы, украшения для бокалов
-                  li Фотоальбом
-                  li Папка для свидетельства
-                  li Лепестки роз
-                  li Корзинка для лепестков
-                  li Шляпа-бантик
-                  li Веночек
-                  li Гирлянда
-                  li Деньги на выкуп
-                  li Держатель для карточки/визитки
-                  li Замки
-                  li Значки
-                  li Книга пожеланий и Альбомы
-                  li Колокольчики
-                  li Украшения для машины
-                  li Кольца для автомобиля
-                  li Наборы свадебных лент
-                  li Магниты на машину
-                  li Костюмы на шампанское
-                  li Ленты на грудь
-                  li Медали
-                  li Подвязки
-                  li Подставки для колец, подушечки
-                  li Рушники
-                  li Семейные очаги
-                  li Сумочки, сундуки
-                  li Тарелки для битья
-                  li Топперы
-        .row
-          .columns.large-12.text-center
-            ul.button-group.even-1
-              li
-                a.alert.button.text-center.tiny(href="tel:88162332132", onclick="yaCounter45549195.reachGoal('callPhone'); return true;")
-                  i.fa.fa-phone
-                  b +7 (8162) 33-21-32
-              li
-                a.alert.button.text-center.tiny(href="mailto:sales@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmail'); return true;")
-                  i.fa.fa-envelope-o
-                  b sales@bmupack.ru
-      +scripts-bottom
-      
+      .columns.large-12
+        h1.text-center Каталог
+        p.text-center
+          | Осуществляем доставку. У нас более 3'500 товаров.
+          br
+          | За прайс-листом обращайтесь к нашим Менеджерам!
+        p.text-center
+          | Для оптовых заказов предлагаем 
+          b индивидуальные цены.
+  .row
+    .columns.large-12
+      p Более 3500 товаров по отличным ценам!
+      p
+        span.alert.label.radius
+          i.fa.fa-gear
+        |  — собственное производство
+  .row
+    .columns.large-12
+      h3 Упаковочные материалы
+      ul.large-block-grid-2.medium-block-grid-2.small-block-grid-1
+        li.offer-card
+          h3.offer Пакеты фасовочные
+          ul.offer-text
+            li
+              | Пакеты в рулонах ПНД 
+              a(href="/production.html")
+                span.alert.label.radius
+                  i.fa.fa-gear
+            li
+              | Пакеты для мусора 
+              a(href="/production.html")
+                span.alert.label.radius
+                  i.fa.fa-gear
+            li
+              | Пакеты Фасовочные ПНД 
+              a(href="/production.html")
+                span.alert.label.radius
+                  i.fa.fa-gear
+            li Пакеты Фасовочные ПВД
+            li Пакеты Бумажные (крафт)
+            li Пакеты Zip-lock (грипперы)
+        li.offer-card
+          h3.offer Пакеты
+          ul.offer-text
+            li
+              | Пакеты для мусора в рулонах 
+              a(href="/production.html")
+                span.alert.label.radius
+                  i.fa.fa-gear
+            li Пакеты для мусора биоразлагаемые
+            li Пакеты «Майка» ПВД (LDPE)
+            li Пакеты «Майка» ПНД (HDPE)
+            li Пакеты с Пластиковой ручкой
+            li Пакеты с Вырубной ручкой
+            li Пакеты с Петлевой ручкой
+            li Пакеты с Петлевой ручкой бумажные
+            li Пакеты для колес
+        li.offer-card
+          h3.offer Мешки и сетки
+          ul.offer-text
+            li Мешки полипропиленовые
+            li Мешки бумажные
+            li Сетка-мешок
+            li Сетка-рукав
+        li.offer-card
+          h3.offer Пленки
+          ul.offer-text
+            li
+              | Пленка стрейч 
+              small (стретч)
+            li Пленка пищевая
+            li Пленка термоусадочная
+            li Пленка ПВХ
+            li Пленка воздушно-пузырчатая
+            li Бумага для выпечки
+            li Рукава и пакеты для запекания
+            li Фольга пищевая
+        li.offer-card
+          h3.offer Сумки
+          ul.offer-text
+            li Сумки виниловые
+            li Сумки джутовые
+            li Сумки полипропиленовые
+            li Сумки с замком
+            li Сумки хозяйственные
+            li Сумки Крафт
+        li.offer-card
+          h3.offer Упаковочные материалы
+          ul.offer-text
+            li Стреп-лента и Скобы
+            li
+              | Скотч малярный 
+              small (крепп)
+            li Скотч пропилен
+            li Скотч тканевый
+            li Скотч двусторонний зеркальный
+            li Скотч канцелярский
+            li Изолента
+            li
+              | Лента алюминиевая 
+              small (скотч армированный)
+            li Лента разметочная оградительная
+        li.offer-card
+          h3.offer Устройства
+          ul.offer-text
+            li Биркодержатели
+            li Диспенсеры для скотча
+            li Запайщики Импульсные
+            li
+              | Комбинированные устройства 
+              small (для п/пр. ленты)
+            li Этикет-пистолеты
+            li Игловые пистолеты
+        li.offer-card
+          h3.offer Шпагат
+          ul.offer-text
+            li Шпагат джутовый
+            li Шпагат льняной
+            li
+              | Шпагат полипропиленовый 
+              small (белый, цветной)
+  .row
+    .columns.large-12.text-center
+      ul.button-group.even-1
+        li
+          a.button.secondary.text-center.tiny(href="tel:88162332132", onclick="yaCounter45549195.reachGoal('callPhone'); return true;")
+            i.fa.fa-phone
+            b +7 (8162) 33-21-32
+        li
+          a.button.secondary.text-center.tiny(href="mailto:sales@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmail'); return true;")
+            i.fa.fa-envelope-o
+            b sales@bmupack.ru
+  .row
+    .columns.large-12
+      h3 Пластик и посуда
+      ul.large-block-grid-2.medium-block-grid-2.small-block-grid-1
+        li.offer-card
+          h3.offer Пластиковые емкости
+          ul.offer-text
+            li Бутылки
+            li Баки
+            li Лейки
+            li Канистры
+            li Канистры со сливом
+            li Тазы
+            li Бочки
+            li Фляги
+            li Контейнеры для СВЧ-печей
+        li.offer-card
+          h3.offer Одноразовая посуда
+          ul.offer-text
+            li Стаканы, чашки
+            li Контейнеры
+            li Тарелки пластиковые
+            li Тарелки картонные
+            li Скатерти
+            li Лотки
+            li Ложки, ножи, вилки
+            li Салфетки
+            li Полотенца бумажные
+            li Платки бумажные
+            li Свечи интерьерные
+            li Украшения для коктейля
+        li.offer-card
+          h3.offer Мебель пластиковая
+          ul.offer-text
+            li Столы
+            li Кресла
+            li
+              | Табуреты 
+              small (высокие, складные)
+            li Зонты, подставки
+  .row
+    .columns.large-12
+      h3 Хозяйственные товары
+      ul.large-block-grid-2.medium-block-grid-2.small-block-grid-1
+        li.offer-card
+          h3.offer Перчатки
+          ul.offer-text
+            li Перчатки виниловые
+            li Перчатки нитриловые
+            li Перчатки полушерстяные
+            li
+              | Перчатки латексные 
+              small (хозяйственные)
+            li
+              | Перчатки резиновые 
+              small (хозяйственные)
+            li
+              | Перчатки х/б 
+              small (хлопчатобумажные, ХБ)
+            li Рукавицы
+        li.offer-card
+          h3.offer Пластик
+          ul.offer-text
+            li Диспенсеры, держатели для полотенец
+            li Диспенсеры, держатели для туалетной бумаги
+            li Диспенсеры для мыла
+            li Салфетницы
+            li Кружки мерные
+            li Мыльницы
+            li Совки
+            li Подносы
+            li Подставки под столовые приборы
+            li Умывальники, рукомойники
+            li Ящики балконные, с крышкой, кашпо
+            li Вазоны
+            li Вешалки
+            li Корзины для белья
+            li Корзины канцелярские
+            li Корзины универсальные
+        li.offer-card
+          h3.offer Хозяйственная группа
+          ul.offer-text
+            li Туалетная бумага
+            li Марля медицинская
+            li
+              | Полотно ХП 
+              small (холстопрошивное)
+            li Ведра
+            li Губки для посуды
+            li Губки металлические
+            li Полотно вафельное
+            li Полотно бумажное
+            li Салфетки вискозные
+            li Салфетки из микрофибры
+            li Тряпки, швабры, насадки MOP
+            li Черенки к швабре
+            li Лопаты снегоуборочные, Веники, Черенки
+            li Коврики
+            li Щетки, щетка-сметка
+        li.offer-card
+          h3.offer Средства защиты
+          ul.offer-text
+            li Бахилы
+            li Бахилы полиэтиленовые
+            li Береты, пилотки
+            li Нарукавники ПНД, ПВД
+            li Передники ПНД, ПВД
+            li Дождевики
+        li.offer-card
+          h3.offer Бытовая химия
+          ul.offer-text
+            li Для мытья посуды
+            li Для мытья стекол
+            li Мыло жидкое
+            li Мыло хозяйственное
+            li Мыло туалетное
+            li СМС (синтетические моющие средства)
+            li СЧС (синтетические чистящие средства)
+        li.offer-card
+          h3.offer Крышки
+          ul.offer-text
+            li Закаточные машинки
+            li
+              | Крышки полиэтиленовые 
+              small (холодная, горячая)
+            li
+              | Крышки для консервирования 
+              small (закаточные)
+            li Крышки винтовые
+        li.offer-card
+          h3.offer Прочее
+          ul.offer-text
+            li Уголь древесный
+            li Щепа для копчения
+  .row
+    .columns.large-12.text-center
+      ul.button-group.even-1
+        li
+          a.button.secondary.text-center.tiny(href="tel:88162332132", onclick="yaCounter45549195.reachGoal('callPhone'); return true;")
+            i.fa.fa-phone
+            b +7 (8162) 33-21-32
+        li
+          a.button.secondary.text-center.tiny(href="mailto:sales@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmail'); return true;")
+            i.fa.fa-envelope-o
+            b sales@bmupack.ru
+  .row
+    .columns.large-12
+      h3 Канцелярские товары
+      ul.large-block-grid-2.medium-block-grid-2.small-block-grid-1
+        li.offer-card
+          h3.offer Ценники
+          ul.offer-text
+            li
+              | Этикет-лента 
+              small (липкие)
+            li Ценник-ролик
+            li Ценники бумажные
+            li Термоэтикетка
+        li.offer-card
+          h3.offer Канцелярская техника
+          ul.offer-text
+            li Калькуляторы
+            li Антистеплер
+            li Дыроколы
+            li Лотки для бумаг
+            li Папки, регистраторы
+            li Степлеры
+            li Красящий валик
+        li.offer-card
+          h3.offer Бумага
+          ul.offer-text
+            li
+              | Чековая лента 
+              small (44, 57, 80 мм)
+            li
+              | Бумага 
+              small (SvetoCopy, Ballet, и др.)
+            li Бумага цветная
+            li Конверты
+            li Копировальная бумага
+            li Ролики для факса
+            li Тетради
+            li Блокноты
+        li.offer-card
+          h3.offer Письменные принадлежности
+          ul.offer-text
+            li Ручки, Карандаши, Стержни
+            li Скрепки, скобы
+            li Канцелярские ножи, лезвия, ножницы
+            li Линейки
+            li Маркеры
+            li Ластики
+            li
+              | Корректор 
+              small Корректирующая жидкость
+        li.offer-card
+          h3.offer Канцтовары
+          ul.offer-text
+            li Скотч канцелярский
+            li Файлы
+            li Закладки клейкие
+            li Зажимы для бумаг
+            li
+              | Клей 
+              small (ПВА, силикатный)
+            li Клей карандаш
+            li Краска штемпельная
+            li Планшеты
+            li
+              | Колечки резиновые 
+              small (для денег)
+        li.offer-card
+          h3.offer Документы
+          ul.offer-text
+            li Книги учета
+            li Авансовые отчеты
+            li Ресторанные счета
+            li Товарные чеки
+            li Доверенности
+            li Приходно-кассовые ордера
+            li Расходно-кассовые ордера
+  .row
+    .columns.large-12.text-center
+      ul.button-group.even-1
+        li
+          a.button.secondary.text-center.tiny(href="tel:88162332132", onclick="yaCounter45549195.reachGoal('callPhone'); return true;")
+            i.fa.fa-phone
+            b +7 (8162) 33-21-32
+        li
+          a.button.secondary.text-center.tiny(href="mailto:sales@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmail'); return true;")
+            i.fa.fa-envelope-o
+            b sales@bmupack.ru
+  .row
+    .columns.large-12
+      h3 Оформление цветов
+      ul.large-block-grid-2.medium-block-grid-2.small-block-grid-1
+        li.offer-card
+          h3.offer Ленты
+          ul.offer-text
+            li Лента Ажурная
+            li Лента Аспидистр
+            li Лента Атласная
+            li Лента декоративная
+            li Лента кокон
+            li Лента кружево
+            li Лента металлизированная
+            li Лента органза
+            li Лента простая
+            li Лента Раффия
+            li Лента с золотой полосой
+            li Тейп лента
+        li.offer-card
+          h3.offer Упаковка для цветов
+          ul.offer-text
+            li Фетр
+            li Сизалевое полотно
+            li Сизалевое волокно
+            li Фоамиран
+            li Гофра
+            li Органза
+            li Бумага
+            li Бумага крафт
+            li Бумага жатая
+            li Бумага дизайнерская
+            li Бумага ламинированная в листах
+            li Бумага тишью
+            li Пленка в листах
+            li Пленка в рулоне, прозрачная
+            li Пленка в рулоне, прозрачная с рисунком
+            li Пленка в рулоне, тонированная
+            li Полисилк
+        li.offer-card
+          h3.offer Оформление для цветов
+          ul.offer-text
+            li Блестки
+            li Бонсай
+            li Брадсы
+            li Булавки, Прищепки
+            li Бусинки, Стразы
+            li Жемчужины из гидрогеля
+            li
+              | Бабочки, стрекозы, шмели 
+              small (декоративные)
+            li Декоративные вставки
+            li Декоративные птички
+            li Декоративные цветы, фрукты, овощи
+            li
+              | Игрушки для букетов 
+              small (свадебные)
+            li Липучки, наклейки
+            li Перья
+            li
+              | Ракушки 
+              small (сизопласт)
+            li
+              | Тэги 
+              small (картон)
+            li Ветки с ягодами и плодами
+            li
+              | Искусственные цветы 
+              small (интерьерные)
+            li
+              | Сухоцветы, природные материалы 
+              small (лагурус, мох, парана стем)
+            li Фрукты и овощи для декора и интерьера
+            li Бусы на нити
+        li.offer-card
+          h3.offer Основы для оформления цветов
+          ul.offer-text
+            li
+              | Каркасы и поддоны 
+              small (сизаль)
+            li Удлинитель для цветов
+            li Кашпо
+            li Корзины
+            li Оазисы, пена флористическая, портбукетницы
+            li
+              | Вазы 
+              small (стекло, пластик)
+            li
+              | Шары, диски, кольца, шарики 
+              small (пенопласт)
+            li Лен
+            li
+              | Пакеты для цветов 
+              small (конус, рукав, рюмка, салфетка)
+            li
+              | Сетка для цветов 
+              small (ажурная, полифлор, рабица)
+        li.offer-card
+          h3.offer Инструменты для оформления цветов
+          ul.offer-text
+            li Пистолет для клея и твердый клей
+            li Шредеры для ленты
+            li Проволока
+            li Краска-спрей
+        li.offer-card
+          h3.offer Упаковка для оформления подарков
+          ul.offer-text
+            li Бант-бабочка
+            li Бант-звезда
+            li Бант-шар
+            li Коробка трансформер
+            li Наполнители флористические
+            li
+              | Шнуры 
+              small (бумажные, витые двухцветные)
+            li Подарочные мешочки
+            li Новогодние коробки-матрешки
+            li Открытки, плакаты
+            li Скотч двухсторонний
+            li Сумки бумажные, ламинированные
+            li Сумки Крафт
+            li Сумки голографические
+  .row
+    .columns.large-12.text-center
+      ul.button-group.even-1
+        li
+          a.button.secondary.text-center.tiny(href="tel:88162332132", onclick="yaCounter45549195.reachGoal('callPhone'); return true;")
+            i.fa.fa-phone
+            b +7 (8162) 33-21-32
+        li
+          a.button.secondary.text-center.tiny(href="mailto:sales@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmail'); return true;")
+            i.fa.fa-envelope-o
+            b sales@bmupack.ru
+  .row
+    .columns.large-12
+      h3 Подарки, Декор и Оформление
+      ul.large-block-grid-2.medium-block-grid-2.small-block-grid-1
+        li.offer-card
+          h3.offer Керамика
+          ul.offer-text
+            li Вазы
+            li Статуэтки
+            li Фигурки декоративные
+            li Копилки
+            li Ландшафтные фигуры
+        li.offer-card
+          h3.offer Наборы
+          ul.offer-text
+            li Наборы для барбекю
+            li Наборы для вина
+            li Подарочные наборы
+            li Наборы для чая
+            li Наборы посуды
+            li Наборы кухонного текстиля
+        li.offer-card
+          h3.offer Сувениры
+          ul.offer-text
+            li Антистрессы
+            li Брелоки
+            li Зажигалки
+            li Зеркальца
+            li Ключницы
+            li Книги-сейфы
+            li Куклы декоративные
+            li Метеостанция
+            li Мыло-скраб
+            li Пепельницы
+            li Подсвечники
+            li Подставки
+            li Кружки, термосы
+            li Светильники
+            li
+              | Свечи 
+              small (день рождения, пасха)
+            li Сувениры на магните
+            li Фотоальбомы, Фоторамки
+            li Часы
+            li Шкатулки
+            li Мишура
+        li.offer-card
+          h3.offer Воздушные шары
+          ul.offer-text
+            li Шары пастель
+            li Шары пастель экстра
+            li Шары металлик
+            li Шары для Моделирования
+            li Наборы шаров с рисунком
+            li Наборы шаров без рисунка рисунком
+            li Насосы
+            li Палочки
+            li Розетки
+  .row
+    .columns.large-12
+      h3 Праздники
+      ul.large-block-grid-2.medium-block-grid-2.small-block-grid-1
+        li.offer-card
+          h3.offer Праздничная атрибутика
+          ul.offer-text
+            li Оформление Свадьбы
+            li Оформление Выпускного
+            li Оформление для Новорожденного
+            li Для Патриотов России
+            li Гирлянды
+            li Игры, призы
+            li Новогодние украшения
+            li Карнавальные принадлежности
+            li Колпаки
+            li Конфетти, хлопушки
+            li Мыльные пузыри
+            li Флаги
+            li Язык-гудок
+        li.offer-card
+          h3.offer Оформление Свадьбы
+          ul.offer-text
+            li Бокалы, украшения для бокалов
+            li Фотоальбом
+            li Папка для свидетельства
+            li Лепестки роз
+            li Корзинка для лепестков
+            li Шляпа-бантик
+            li Веночек
+            li Гирлянда
+            li Деньги на выкуп
+            li Держатель для карточки/визитки
+            li Замки
+            li Значки
+            li Книга пожеланий и Альбомы
+            li Колокольчики
+            li Украшения для машины
+            li Кольца для автомобиля
+            li Наборы свадебных лент
+            li Магниты на машину
+            li Костюмы на шампанское
+            li Ленты на грудь
+            li Медали
+            li Подвязки
+            li Подставки для колец, подушечки
+            li Рушники
+            li Семейные очаги
+            li Сумочки, сундуки
+            li Тарелки для битья
+            li Топперы
+  .row
+    .columns.large-12.text-center
+      ul.button-group.even-1
+        li
+          a.alert.button.text-center.tiny(href="tel:88162332132", onclick="yaCounter45549195.reachGoal('callPhone'); return true;")
+            i.fa.fa-phone
+            b +7 (8162) 33-21-32
+        li
+          a.alert.button.text-center.tiny(href="mailto:sales@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmail'); return true;")
+            i.fa.fa-envelope-o
+            b sales@bmupack.ru

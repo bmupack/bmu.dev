@@ -1,0 +1,271 @@
+extends ../mixins/layout
+
+block content 
+  .hero-manufacture
+    .hero-manufacture-img.row-large
+      .hero-img-manufacture-alpha
+        .manufacture-flex.row
+          .columns.large-12.medium-12.small-12
+            .hero-text-wr
+              .hero-text
+                p.lead
+                  span Снабжаем Москву, Санкт-Петербург и города СЗФО
+          .columns.large-8.medium-12.small-12
+            .hero-text-wr
+              .hero-text
+                .girl-call-wr
+                  .girl-call
+                    .girl-call-image-wr
+                      .girl-call-image
+                    .girl-call-text
+                      h1
+                        span 5 минут! Рассчитаю индивидуальные цены!
+                      p
+                        span Привезу бесплатно. Приму заказ. Дам консультацию.
+                      a.alert.button.text-center(href="tel:88162903620", onclick="yaCounter45549195.reachGoal('callManufacture'); return true;")
+                        i.fa.fa-phone
+                        b Получить прайс по телефону +7 (8162) 90-36-20
+          .columns.large-4.medium-12.small-12
+            .hero-text-wr
+              .hero-text
+                ul.hero-features
+                  li.row
+                    .columns.large-2.medium-1.small-2
+                      .hero-features-icon-wr
+                        i.fa.fa-truck
+                    .columns.large-10.medium-11.small-10
+                      span.feature-title
+                        b Бесплатная
+                        |  доставка
+                      span.feature-text
+                        | По В. Новгороду При заказе от 2'000 
+                        i.fa.fa-rub
+                        br
+                        | При заказе от 5'000 
+                        i.fa.fa-rub
+                        |  по области
+                        br
+                        | В Санкт-Петербург При заказе от 100'000 
+                        i.fa.fa-rub
+                        br
+                        | В другие регионы по согласованию
+                  li.row
+                    .columns.large-2.medium-1.small-2
+                      .hero-features-icon-wr
+                        i.fa.fa-industry
+                    .columns.large-10.medium-11.small-10
+                      span.feature-title
+                        b Производитель
+                      span.feature-text Цены ниже — поставки напрямую.
+                  li.row
+                    .columns.large-2.medium-1.small-2
+                      .hero-features-icon-wr
+                        i.fa.fa-percent
+                    .columns.large-10.medium-11.small-10
+                      span.feature-title
+                        b Скидки
+                      span.feature-text Индивидуальные цены для оптовых клиентов. Любая форма оплаты.
+                  li.row
+                    .columns.large-2.medium-1.small-2
+                      .hero-features-icon-wr
+                        i.fa.fa-magic
+                    .columns.large-10.medium-11.small-10
+                      span.feature-title Заказные позиции
+                      span.feature-text
+                        | Изготовим упаковку любого 
+                        b размера, микронности, вложения / намотки
+                        |  по Вашему техническому заданию.
+  .blue-background.row-large
+    .product-container.row
+      .columns.large-12
+        h2.manufacture-header Популярные продукты
+        p.manufacture-text-partner
+          | Воможности нашего производства позволяют поддерживать широкую номенкулатуру фасовочных пакетов ПНД, в том числе в рулонах.
+          br
+          | По 
+          b индивидуальным
+          |  заказам мы производим упаковку произвольных размеров, тощины, количества в пачке и намотки. Есть возможность нанесения логотипа.
+      .columns.large-12
+        table.fullwidth.hover.table.unstriped
+          thead
+            tr
+              td
+              td Размеры
+              td.hide-for-small
+          tbody
+            tr
+              td Пакет фасовочный с фальцем
+              td 18х27, 22х32, 22х35, 22х38, 22х50, 26х35, Заказные
+              td.hide-for-small 6мкм — 9мкм
+            tr
+              td Пакет фасовочный без фалцьев
+              td 24х37, 25х40, 30х40, 30х45, 30х60, 50х80, Заказные
+              td.hide-for-small 6мкм — 15мкм
+            tr
+              td Фасовочные пакеты в рулоне
+              td Заказные (произвольный размер)
+              td.hide-for-small 6мкм — 10мкм
+            tr
+              td Фасовочные пакеты в рулоне (втулка)
+              td Заказные (произвольный размер)
+              td.hide-for-small Заказные (произвольный)
+            tr
+              td Пакет для мусора
+              td 10л — 110л
+              td.hide-for-small Заказные (произвольный)
+            tr
+              td Пакеты-вкладыши в гофрокороба
+              td Заказные (произвольный размер)
+              td.hide-for-small Заказные (произвольный)
+        p
+          | Не нашли нужного? Посмотрите 
+          a.link-on-primary(href="/catalog.html") весь каталог
+          |  или Позвоните нам! 
+          a.link-on-primary(href="tel:88162332131", onclick="yaCounter45549195.reachGoal('callPhone'); return true;")
+            span +7 8162 33-21-31
+            i.fa.fa-phone
+  .manufacture-partner-block.row
+    .columns.large-12
+      h2.manufacture-header Зарабатывайте больше!
+      .manufacture-text-partner
+        p
+          | Мы трепетно отслеживаем цены на рынке и всегда рады сделать выгодные предложения!
+        p
+          | Мы 
+          i любим
+          |  своих клиентов и всегда рады 
+          strong взаимовыгодному
+          |  сотрудничеству.
+    .columns.large-12
+      ul.large-block-grid-2.manufacture-advantage.medium-block-grid-2.small-block-grid-1
+        li
+          .columns.large-1
+            i.fa.fa-chevron-down
+          .columns.large-11
+            h4 Качество
+            p
+              | Оригинальная упаковка с нашим логотипом — гарантия качества. Мы проводим Контроль качества продукции, используем Современное оборудование, для Вас трудится Высококвалифицированный персонал.
+        li
+          .columns.large-1
+            i.fa.fa-truck
+          .columns.large-11
+            h4 Доставка
+            p
+              | Мы осуществляем 
+              strong бесплатную
+              |  доставку в Санкт-Петербург при заказе от 100'000 
+              span.fa.fa-rub ,
+              |  по Великому Новгороду от 2'000 
+              span.fa.fa-rub ,
+              |  по Новгородской области от 5'000 
+              span.fa.fa-rub .
+              |  Возможна доставка в Москву, города Северо-Запада и другие регионы.
+        li
+          .columns.large-1
+            i.fa.fa-shopping-cart
+          .columns.large-11
+            h4 В наличии и на заказ
+            p
+              | Прямые поставки со складов нашего производства и быстрое производство индивидуальной упаковки на заказ.
+        li
+          .columns.large-1
+            i.fa.fa-file-image-o
+          .columns.large-11
+            h4 Индивидуальность
+            p
+              | Производство упаковки под Вашим брендом, необходимого размера, микронности, намотки / вложения — по Вашему техническому заданию.
+        li
+          .columns.large-1
+            i.fa.fa-certificate
+          .columns.large-11
+            h4 Сертификация
+            p Наличие сертификатов на все виды товаров.
+        li
+          .columns.large-1
+            i.fa.fa-credit-card
+          .columns.large-11
+            h4 Оплата
+            p Безналичный и наличный расчет.
+  .row
+    .columns.large-12
+      ul.button-group.even-1.text-center
+        li
+          a.alert.button.small.text-center(href="tel:88162903620", onclick="yaCounter45549195.reachGoal('callManufacture'); return true;")
+            i.fa.fa-phone
+            b Сделать заказ +7 (8162) 90-36-20
+        li
+          a.alert.button.small.text-center(href="mailto:sales@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmailManufacture'); return true;")
+            i.fa.fa-envelope-o
+            b Отправить заявку sales@bmupack.ru
+  .catalog.dark-background.row-large
+    .row
+      .columns.large-12
+        h4.header-on-dark Сопутствующие товары
+      .columns.large-12
+        a(href="/catalog.html") Каталог
+      .columns.large-12
+        ul.large-block-grid-4.medium-block-grid-2.small-block-grid-1
+          li
+            h3.header-on-dark Упаковка
+            ul.nomargins
+              li.offer-card
+                h3.offer Пакеты фасовочные
+              li.offer-card
+                h3.offer Пакеты
+              li.offer-card
+                h3.offer Мешки и сетки
+              li.offer-card
+                h3.offer Пленки
+              li.offer-card
+                h3.offer Сумки
+              li.offer-card
+                h3.offer Упаковочные материалы
+              li.offer-card
+                h3.offer Устройства
+              li.offer-card
+                h3.offer Шпагат
+          li
+            h3.header-on-dark Пластик и посуда
+            ul.nomargins
+              li.offer-card
+                h3.offer Пластиковые емкости
+              li.offer-card
+                h3.offer Одноразовая посуда
+              li.offer-card
+                h3.offer Мебель пластиковая
+          li
+            h3.header-on-dark Хозтовары
+            ul.nomargins
+              li.offer-card
+                h3.offer Перчатки
+              li.offer-card
+                h3.offer Пластик
+              li.offer-card
+                h3.offer Хозяйственная группа
+              li.offer-card
+                h3.offer Средства защиты
+              li.offer-card
+                h3.offer Бытовая химия
+                ul.offer-text
+              li.offer-card
+                h3.offer Крышки
+              li.offer-card
+                h3.offer Прочее
+          li
+            h3.header-on-dark Канцтовары
+            ul.nomargins
+              li.offer-card
+                h3.offer Ценники
+              li.offer-card
+                h3.offer Канцелярская техника
+              li.offer-card
+                h3.offer Бумага
+              li.offer-card
+                h3.offer Письменные принадлежности
+              li.offer-card
+                h3.offer Документы
+      .columns.large-12
+        a(href="/catalog.html") Подробнее
+  script(data-dojo-config="usePlainJson: true, isDebug: false", src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js", type="text/javascript")
+  script.
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"42fad91015d9344b12e8586c6","lid":"b4dc660367"}) })
