@@ -45,7 +45,7 @@ gulp.task('haml', function () {
 
 // Javascript
 gulp.task("javascript", function() {
-    return gulp.src('src/js/app.js')
+    gulp.src('src/js/app.js')
         .pipe(plumberNotifier())
         .pipe(webpack(webpackConfig))
         .pipe(gulp.dest('build/js'))
@@ -53,10 +53,7 @@ gulp.task("javascript", function() {
         .pipe(connect.reload());
 });
 
-
-
-
-
+// SASS
 gulp.task('sass', function () {
   return sass(paths.sass)
     .pipe(plumberNotifier())
@@ -65,15 +62,6 @@ gulp.task('sass', function () {
     .pipe(notify("SASS Bundling done."))
     .pipe(connect.reload());
 });
-
-gulp.task('scss', function () {
-  return sass(paths.scss)
-    .pipe(plumberNotifier())
-    .on('error', sass.logError)
-    .pipe(gulp.dest('build/css'))
-    .pipe(connect.reload());
-});
-
 
 // Images
 gulp.task('image', function () {
@@ -94,24 +82,24 @@ gulp.task('copy', function () {
 // Watch task
 gulp.task('watch', function() {
     gulp.watch(paths.scripts, ['javascript']);
-    gulp.watch(paths.haml, ['haml']);
-    gulp.watch(paths.sass, ['sass']);
-    gulp.watch(paths.scss, ['scss']);
-    gulp.watch(paths.images, ['image']);
-    gulp.watch(paths.style, ['scss']);
-    gulp.watch(paths.views, ['views']);
-    gulp.watch(paths.mixins, ['views']);
-    gulp.watch(paths.data, ['views']);
+    gulp.watch(paths.haml,    ['haml']);
+    gulp.watch(paths.sass,    ['sass']);
+    gulp.watch(paths.scss,    ['scss']);
+    gulp.watch(paths.images,  ['image']);
+    gulp.watch(paths.style,   ['scss']);
+    gulp.watch(paths.views,   ['views']);
+    gulp.watch(paths.mixins,  ['views']);
+    gulp.watch(paths.data,    ['views']);
 });
 
+// Views
 gulp.task('views', function buildHTML() {
-
-  return gulp.src(paths.views)
-  .pipe(data(function (file) {
-      return require('./' +paths.data[0]);
-  }))
-  .pipe(pug({}))
-  .pipe(gulp.dest('build/'))
+  gulp.src(paths.views)
+    .pipe(data(function (file) {
+        return require('./' + paths.data[0]);
+    }))
+    .pipe(pug({}))
+    .pipe(gulp.dest('build/'))
 
 });
 
@@ -124,5 +112,4 @@ gulp.task('webserver', function() {
   });
 });
 
-// gulp.task('default', ['watch', 'javascript', 'haml', 'sass', 'image', 'copy', 'views', 'webserver']);
 gulp.task('default', ['watch', 'javascript', 'sass', 'image', 'copy', 'views', 'webserver']);

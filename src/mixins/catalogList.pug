@@ -1,6 +1,7 @@
 mixin catalogList(category)
+  h1= category.name
   ul.small-block-grid-1.medium-block-grid-2.large-block-grid-2
-    each subcategory in category
+    each subcategory in category.subcategories
 
       li.offer-card
         h3.offer= subcategory.subcategory

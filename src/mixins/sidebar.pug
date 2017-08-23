@@ -4,7 +4,7 @@ mixin sidebar()
       b Каталог товаров
     li
       a(href="/catalog/upakovka.html")
-        | Упаковка 
+        | Упаковка &nbsp;
         span.alert.label.radius
           i.fa.fa-gear
     li
@@ -19,7 +19,11 @@ mixin sidebar()
       a(href="/catalog/gifts.html") Подарки, декор и оформление
     li
       a(href="/catalog/celebration.html") Оформление праздников
-    li
+  p.text-center
+    small
       span.alert.label.radius
         i.fa.fa-gear
-      |  — собственное производство
+      br
+      | —
+      br
+      a(href="/production.html") собственное производство
