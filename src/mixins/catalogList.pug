@@ -1,7 +1,14 @@
 mixin catalogList(category)
-  each subcategory in category
-    p= subcategory.subcategory
-    each item in subcategory.items
-      p 
-       span= item.name
-       span= item.description
+  ul.small-block-grid-1.medium-block-grid-2.large-block-grid-2
+    each subcategory in category
+
+      li.offer-card
+        h3.offer= subcategory.subcategory
+        ul.offer-text
+          each item in subcategory.items
+            li
+              span= item.name
+              if item.description
+                small &nbsp; (
+                  = item.description
+                  | )
