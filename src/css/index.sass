@@ -8,14 +8,14 @@
 .hero-img-alpha
   width: 100%
   height: inherit
-  background-color: rgba($white, 0.5)
+  // background-color: rgba($white, 0.5)
 
 .hero-img
   background: url('/images/building.jpg')
   background-repeat: no-repeat
   background-size: 100%
   background-position: top
-  height: $hero-height
+  min-height: $hero-height
   text-align: center
   display: flex
   align-items: center
@@ -44,16 +44,17 @@
         -webkit-flex-direction: column
         flex-direction: column
         justify-content: center
+        color: $white
         h1
           // margin-bottom: 2*$gutter
-          $text-shadow-size: 1px
-          $text-shadow-color: rgba($white, 0.5)
           font-weight: bold
           font-size: 2rem
-          text-shadow: $text-shadow-color $text-shadow-size $text-shadow-size, $text-shadow-color -1*$text-shadow-size -1*$text-shadow-size, $text-shadow-color 1*$text-shadow-size -1*$text-shadow-size, $text-shadow-color -1*$text-shadow-size 1*$text-shadow-size
+          // $text-shadow-size: 1px
+          // $text-shadow-color: rgba($white, 0.5)
+          // text-shadow: $text-shadow-color $text-shadow-size $text-shadow-size, $text-shadow-color -1*$text-shadow-size -1*$text-shadow-size, $text-shadow-color 1*$text-shadow-size -1*$text-shadow-size, $text-shadow-color -1*$text-shadow-size 1*$text-shadow-size
 
         h1, p
-          color: $oil
+          color: $white
         p.white
           color: $white
           line-height: 0px
@@ -75,6 +76,7 @@
           margin-left: 0
           background-color: rgba($white, 0.8)
           border: 2px solid rgba($primary-color, .7)
+          color: $oil
           li
             margin-bottom: $gutter
             .hero-features-icon-wr
