@@ -7,13 +7,15 @@
 
 .hero-img-alpha
   width: 100%
-  // height: 100%
-  background-color: rgba($white, 0.85)
+  height: inherit
+  background-color: rgba($white, 0.5)
 
 .hero-img
-  // background: url('/images/building.jpg') 100% no-repeat
-  background-size: cover
-  // height: $hero-height
+  background: url('/images/building.jpg')
+  background-repeat: no-repeat
+  background-size: 100%
+  background-position: top
+  height: $hero-height
   text-align: center
   display: flex
   align-items: center
@@ -22,6 +24,7 @@
     display: flex
     flex-flow: row wrap
     align-items: center
+    height: inherit
   .hero
     margin-top: $gutter
     .hero-text-wr
@@ -106,15 +109,21 @@
   ul.partners-type-list
     padding: $gutter
     li
+      display: flex
       padding: $gutter 2*$gutter
       text-align: center
-      .icon-wr
+      align-items: center
+      i
+        margin: $gutter
         font-size: 2*$gutter
         color: $warning-color
         margin-bottom: $gutter
 
       span.description
-        font-size: bold
+        text-align: center
+        // font-weight: bold
+        font-size: 0.8*$gutter
+        width: 100%
 
 
 /* MailChimp Form Embed Code - Classic - 12/17/2015 v10.7

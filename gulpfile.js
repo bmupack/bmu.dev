@@ -86,7 +86,6 @@ gulp.task('watch', function() {
     gulp.watch(paths.sass,    ['sass']);
     gulp.watch(paths.scss,    ['scss']);
     gulp.watch(paths.images,  ['image']);
-    gulp.watch(paths.style,   ['scss']);
     gulp.watch(paths.views,   ['views']);
     gulp.watch(paths.mixins,  ['views']);
     gulp.watch(paths.data,    ['views']);
@@ -95,12 +94,13 @@ gulp.task('watch', function() {
 // Views
 gulp.task('views', function buildHTML() {
   gulp.src(paths.views)
+    .pipe(plumberNotifier())
     .pipe(data(function (file) {
         return require('./' + paths.data[0]);
     }))
     .pipe(pug({}))
     .pipe(gulp.dest('build/'))
-
+    .pipe(connect.reload());
 });
 
 
