@@ -1,4 +1,3 @@
-// Requirements
 var gulp                = require('gulp');
 var gutil               = require("gulp-util");
 var haml                = require('gulp-haml-coffee');
@@ -13,21 +12,26 @@ var htmlmin             = require('gulp-htmlmin');
 var connect             = require('gulp-connect');
 var plumber             = require('gulp-plumber');
 var plumberNotifier     = require('gulp-plumber-notifier');
+var pug                 = require('gulp-pug');
+var data                = require('gulp-data');
 
 const autoprefixer      = require('gulp-autoprefixer');
 const image             = require('gulp-image');
 
+
 // Paths
 var paths = {
     scripts: ['src/js/**/*.js'],
-    sass:    ['src/css/**/*.sass'],
+    sass:    ['src/css/**/*.sass', 'src/css/**/*.scss'],
     scss:    ['src/css/**/*.scss'],
     style:   ['src/css/**/*'],
     copy:    ['src/copy/*'],
     haml:    ['src/pages/**/*.haml'],
-    images:  ['src/images/**/*']
+    images:  ['src/images/**/*'],
+    views:   ['src/views/**/*.pug'],
+    mixins:  ['src/mixins/**/*.pug'],
+    data:    ['src/data/data.json']
 };
-
 // HTML
 gulp.task('haml', function () {
     gulp.src(paths.haml)
@@ -103,6 +107,27 @@ gulp.task('copy', function () {
     .pipe(gulp.dest('build/'));
 });
 
+// Views
+gulp.task('views', function buildHTML() {
+  gulp.src(paths.views)
+    .pipe(plumberNotifier())
+    .pipe(data(function (file) {
+        return require('./' + paths.data[0]);
+    }))
+    .pipe(pug({}))
+    .pipe(gulp.dest('build/'))
+    .pipe(connect.reload());
+});
+
+
+gulp.task('webserver', function() {
+  connect.server({
+    root: 'build',
+    livereload: true,
+    port: 8080
+  });
+});
 
 // Default task
-gulp.task('default', ['javascript', 'haml', 'sass', 'scss', 'image', 'copy']);
+gulp.task('default', ['javascript', 'views', 'sass', 'scss', 'image', 'copy']);
+gulp.task('all', ['javascript', 'views', 'sass', 'scss', 'image', 'copy', 'webserver']);
