@@ -60,8 +60,7 @@ gulp.task('sass', function () {
   return sass(paths.sass)
     .on('error', sass.logError)
     .pipe(autoprefixer({
-        browsers: ['last 3 versions'],
-        verbose: true,
+        browsers: ['last 2 versions'],
         cascade: true
     }))
     .pipe(cssnano())
@@ -72,7 +71,7 @@ gulp.task('scss', function () {
   return sass(paths.scss)
     .on('error', sass.logError)
     .pipe(autoprefixer({
-        browsers: ['last 3 versions'],
+        browsers: ['last 2 versions'],
         cascade: true
     }))
     .pipe(cssnano())
