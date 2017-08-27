@@ -1,5 +1,9 @@
 extends ../mixins/layout
+include ../mixins/topbarsub 
 
+block subtopbar
+  +topbarsub('production')
+  
 block content 
   .hero-manufacture
     .hero-manufacture-img.row-large

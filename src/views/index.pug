@@ -1,5 +1,9 @@
 extends ../mixins/layout.pug
+include ../mixins/topbarsub 
 
+block subtopbar
+  +topbarsub('index')
+  
 block content
   #hero-img.hero-about.hero-img.row-large
     .hero-img-alpha
