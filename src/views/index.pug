@@ -25,7 +25,7 @@ block content
                   a.button.small(href="/catalog.html")
                     i.fa.fa-list 
                     b  Посмотреть каталог
-        .columns.large-4
+        .columns.large-4.hide-for-medium-down
           .hero
             .hero-text-wr
               .hero-text
@@ -79,6 +79,65 @@ block content
                       span.feature-title Цены и Оплата
                       span.feature-text
                         | Индивидуальные скидки для оптовых клиентов. Принимаем наличные и безналичные платежи
+                        
+  
+  .row.hide-for-large-up
+    .columns.large-12
+      ul.large-block-grid-2.small-block-grid-1.medium-block-grid-2.features-block-list-medium-down
+        li
+          .row
+            .columns.large-2.small-2
+              .hero-features-icon-wr
+                i.fa.fa-ship
+            .columns.large-10.small-10
+              span.feature-title
+                b Бесплатная
+                |  доставка
+              span.feature-text
+                | При заказе от 2'000 
+                i.fa.fa-rub
+                |  по Новгороду
+                br
+                | При заказе от 5'000 
+                i.fa.fa-rub
+                |  по области
+                br
+                | При заказе от 100'000 
+                i.fa.fa-rub
+                |  в другие города
+        li
+          .row
+            .columns.large-2.small-2
+              .hero-features-icon-wr
+                i.fa.fa-industry
+            .columns.large-10.small-10
+              span.feature-title
+                b Производство
+              span.feature-text
+                | Собственная 
+                a(href="/production.html") линия производства 
+                | фасовочных пакетов ПНД
+        li
+          .row
+            .columns.large-2.small-2
+              .hero-features-icon-wr
+                i.fa.fa-list
+            .columns.large-10.small-10
+              span.feature-title Товары
+              span.feature-text
+                | Более 3'500 
+                a(href="/catalog.html") товаров 
+                | для оптовых и розничных клиентов
+        li
+          .row
+            .columns.large-2.small-2
+              .hero-features-icon-wr
+                i.fa.fa-credit-card
+            .columns.large-10.small-10
+              span.feature-title Цены и Оплата
+              span.feature-text
+                | Индивидуальные скидки для оптовых клиентов. Принимаем наличные и безналичные платежи
+
   .row-block
     .row.about-company
       .columns.large-12
@@ -97,8 +156,10 @@ block content
           a(href="/gift.html")
             | продукцией! 
             i.fa.fa-gift
-        p.text-center Мы создаем условия для работы в различных секторах жизни и экономики.
-        ul.large-block-grid-4.partners-type-list.small-block-grid-2
+        h4.text-center С кем мы работаем?
+        p.text-center Мы создаем условия для работы в различных секторах жизни и экономики. 
+        
+        ul.large-block-grid-4.partners-type-list.medium-block-grid-2.small-block-grid-1
           li
             i.fa.fa-shopping-basket
             span.description Торговые сети и магазины

@@ -1,9 +1,9 @@
 @import 'constants'
 
 .hero-about
+  margin-bottom: $gutter
   .hero-about-image-wr
     width: 500px
-    img
 
 .hero-img-alpha
   width: 100%
@@ -27,6 +27,7 @@
     height: inherit
   .hero
     margin-top: $gutter
+    min-height: 250px
     .hero-text-wr
       width: 100%
       // height: 100%
@@ -99,7 +100,7 @@
 
 
 .about-company
-  padding-top: $gutter
+  // padding-top: $gutter
   padding-bottom: $gutter
   .about-pads
     padding-top: 2*$gutter
@@ -324,6 +325,32 @@
       color: #e85c41
     input.mce_inline_error
       border: 2px solid #e85c41
+
+
+
+
+ul.features-block-list-medium-down
+  padding-top:    2*$gutter
+  li
+    // margin-bottom: 2*$gutter
+    .hero-features-icon-wr
+      position: relative
+      i
+        position: absolute
+        top: 0.5*$gutter
+        left: 0.5*$gutter
+        color: darken($primary-color, 15%)
+        font-size: 1.8*$gutter
+
+    span
+      display: block
+    span.feature-title
+      color: darken($primary-color, 15%)
+      font-size: 1.25*$gutter
+    span.feature-text
+      font-size: .75*$gutter
+
+
 
 
 //
