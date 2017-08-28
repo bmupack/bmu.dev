@@ -2,6 +2,7 @@
   "catalog": {
     "homewares": {
       "name": "Хозяйственные товары",
+      "image": "/images/homewares.jpg",
       "subcategories": [
         {
           "subcategory": "Перчатки",
@@ -102,6 +103,7 @@
 
     "gifts": {
       "name": "Подарки",
+      "image": "/images/gifts.jpg",
       "subcategories": [
         {
           "subcategory": "Керамика",
@@ -168,6 +170,7 @@
 
     "flowersgifts": {
       "name": "Упаковка и оформление цветов и подарков",
+      "image": "/images/flowersgifts.jpg",
       "subcategories": [
         {
           "subcategory": "Ленты",
@@ -262,7 +265,7 @@
         {
           "subcategory": "Упаковка для оформления подарков",
           "items":  [
-            
+
             {"name": "Бант-бабочка"},
             {"name": "Бант-звезда"},
             {"name": "Бант-шар"},
@@ -282,6 +285,7 @@
     },
     "plastic":{
       "name": "Пластик и посуда",
+      "image": "/images/plastic.jpg",
       "subcategories": [
         {
           "subcategory": "Пластиковые емкости",
@@ -327,6 +331,7 @@
     },
     "stationery": {
       "name": "Канцелярские товары",
+      "image": "/images/stationery.jpg",
       "subcategories": [
         {
           "subcategory": "Ценники",
@@ -405,6 +410,7 @@
     },
     "upakovka": {
       "name": "Упаковочные материалы",
+      "image": "/images/upakovka.jpg",
       "subcategories":  [
         {
           "subcategory": "Пакеты фасовочные",
@@ -501,6 +507,7 @@
     },
     "celebration": {
       "name": "Праздничная атрибутика",
+      "image": "/images/celebration.jpg",
       "subcategories": [
         {
           "subcategory": "Праздничная атрибутика",
