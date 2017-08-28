@@ -1,5 +1,9 @@
 extends ../mixins/layout.pug
+include ../mixins/topbarsub 
 
+block subtopbar
+  +topbarsub('index')
+  
 block content
   #hero-img.hero-about.hero-img.row-large
     .hero-img-alpha
@@ -22,12 +26,12 @@ block content
                     
                 .button-group.radius
                   a.button.small(href="tel:88162332132", onclick="yaCounter45549195.reachGoal('callPhone'); return true;")
-                    i.fa.fa-phone
-                    b Позвонить +7 (8162) 33-21-32
+                    i.fa.fa-phone 
+                    b  Позвонить +7 (8162) 33-21-32
                   a.button.small(href="/catalog.html")
-                    i.fa.fa-list
-                    b Посмотреть каталог
-        .columns.large-4
+                    i.fa.fa-list 
+                    b  Посмотреть каталог
+        .columns.large-4.hide-for-medium-down
           .hero
             .hero-text-wr
               .hero-text
@@ -86,65 +90,113 @@ block content
                       span.feature-title Цены и Оплата
                       span.feature-text
                         | Индивидуальные скидки для оптовых клиентов. Принимаем наличные и безналичные платежи
-  .row-large
-    .about-company.row
-      .columns.large-3.medium-12.small-12
-        .about-pads
-          p.subheader Реальный сектор экономики
-          h2 Значимость
-          p Мы создаем комфортные условия для работы в различных секторах жизни и экономики.
-      .columns.large-9.medium-12.small-12
-        ul.large-block-grid-4.partners-type-list.small-block-grid-2
-          li
-            .icon-wr
-              i.fa.fa-shopping-basket
-            span.description Торговые сети и магазины
-          li
-            .icon-wr
-              i.fa.fa-medkit
-            span.description Медицина
-          li
-            .icon-wr
-              i.fa.fa-id-card
-            span.description Государственные учреждения
-          li
-            .icon-wr
-              i.fa.fa-cutlery
-            span.description Рестораны, бары и кафе
-          li
-            .icon-wr
-              i.fa.fa-crop
-            span.description Сельское хозяйство
-          li
-            .icon-wr
-              i.fa.fa-paint-brush
-            span.description Клиринговые компании
-          li
-            .icon-wr
-              i.fa.fa-magic
-            span.description Развлечения
-          li
-            .icon-wr
-              i.fa.fa-industry
-            span.description Производства
-  .row-block
-    .row
+
+  
+  .row.hide-for-large-up
+    .columns.large-12
+      ul.large-block-grid-2.small-block-grid-1.medium-block-grid-2.features-block-list-medium-down
+        li
+          .row
+            .columns.large-2.small-2
+              .hero-features-icon-wr
+                i.fa.fa-ship
+            .columns.large-10.small-10
+              span.feature-title
+                b Бесплатная
+                |  доставка
+              span.feature-text
+                | При заказе от 2'000 
+                i.fa.fa-rub
+                |  по Новгороду
+                br
+                | При заказе от 5'000 
+                i.fa.fa-rub
+                |  по области
+                br
+                | При заказе от 100'000 
+                i.fa.fa-rub
+                |  в другие города
+        li
+          .row
+            .columns.large-2.small-2
+              .hero-features-icon-wr
+                i.fa.fa-industry
+            .columns.large-10.small-10
+              span.feature-title
+                b Производство
+              span.feature-text
+                | Собственная 
+                a(href="/production.html") линия производства 
+                | фасовочных пакетов ПНД
+        li
+          .row
+            .columns.large-2.small-2
+              .hero-features-icon-wr
+                i.fa.fa-list
+            .columns.large-10.small-10
+              span.feature-title Товары
+              span.feature-text
+                | Более 3'500 
+                a(href="/catalog.html") товаров 
+                | для оптовых и розничных клиентов
+        li
+          .row
+            .columns.large-2.small-2
+              .hero-features-icon-wr
+                i.fa.fa-credit-card
+            .columns.large-10.small-10
+              span.feature-title Цены и Оплата
+              span.feature-text
+                | Индивидуальные скидки для оптовых клиентов. Принимаем наличные и безналичные платежи
+
+  .row-block    
+    .row.about-company
       .columns.large-12
         h2.text-center О компании
         p.text-center
           strong
             | Мы — 
-            a(href="/production.html") производственная
-          |  компания. 
+            a(href="/production.html") производственная 
+          | компания. 
           strong Богатый Мир Упаковки
           |  обеспечивает города упаковочными материалами, хозяйственно-бытовыми и канцелярскими 
-          a(href="/catalog.html")
+          a(href="/catalog.html") 
             b товарами 
-            i.fa.fa-list 
-          | , а так же сувенирами, праздничной, интерьерной и декоративной 
+            i.fa.fa-list
+          | , а так же сувенирами, праздничной, интерьерной и декоративной  
           a(href="/gift.html")
             | продукцией! 
             i.fa.fa-gift
+        h4.text-center С кем мы работаем?
+        p.text-center Мы создаем условия для работы в различных секторах жизни и экономики. 
+        
+        ul.large-block-grid-4.partners-type-list.medium-block-grid-2.small-block-grid-1
+          li
+            i.fa.fa-shopping-basket
+            span.description Торговые сети и магазины
+          li
+            i.fa.fa-industry
+            span.description Производства и Логистика
+          li
+            i.fa.fa-cutlery
+            span.description Рестораны, бары и кафе
+          li
+            i.fa.fa-medkit
+            span.description Медицина
+          li
+            i.fa.fa-id-card
+            span.description Государственные учреждения
+          li
+            i.fa.fa-crop
+            span.description Сельское хозяйство
+          li
+            i.fa.fa-paint-brush
+            span.description Клиринговые компании
+          li
+            i.fa.fa-magic
+            span.description Развлечения
+
+
   .blue-background.row-large
     .row
       .columns.large-7

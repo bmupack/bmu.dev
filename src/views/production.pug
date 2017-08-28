@@ -1,5 +1,9 @@
 extends ../mixins/layout
+include ../mixins/topbarsub 
 
+block subtopbar
+  +topbarsub('production')
+  
 block content 
   .hero-manufacture
     .hero-manufacture-img.row-large
@@ -9,7 +13,6 @@ block content
             .hero-text-wr
               .hero-text
                 p.lead
-                  span Снабжаем Москву, Санкт-Петербург и города СЗФО
           .columns.large-8.medium-12.small-12
             .hero-text-wr
               .hero-text
@@ -18,13 +21,16 @@ block content
                     .girl-call-image-wr
                       .girl-call-image
                     .girl-call-text
+                      
                       h1
                         span 5 минут! Рассчитаю индивидуальные цены!
-                      p
+                      p.first-par
                         span Привезу бесплатно. Приму заказ. Дам консультацию.
+                      p.lead
+                        span Поставки в Санкт-Петербург, Москву и города СЗФО
                       a.alert.button.text-center(href="tel:88162903620", onclick="yaCounter45549195.reachGoal('callManufacture'); return true;")
-                        i.fa.fa-phone
-                        b Получить прайс по телефону +7 (8162) 90-36-20
+                        i.fa.fa-phone 
+                        b  Получить прайс по телефону +7 (8162) 90-36-20
           .columns.large-4.medium-12.small-12
             .hero-text-wr
               .hero-text

@@ -1,5 +1,9 @@
 extends ../mixins/layout
+include ../mixins/topbarsub 
 
+block subtopbar
+  +topbarsub('contacts')
+  
 block content
   .contacts-block-wr
     .contacts-block

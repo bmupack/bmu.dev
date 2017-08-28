@@ -1,19 +1,21 @@
 @import 'constants'
 
 .hero-about
+  margin-bottom: $gutter
   .hero-about-image-wr
     width: 500px
-    img
 
 .hero-img-alpha
   width: 100%
-  // height: 100%
-  background-color: rgba($white, 0.85)
+  height: inherit
+  // background-color: rgba($white, 0.5)
 
 .hero-img
-  // background: url('/images/building.jpg') 100% no-repeat
-  background-size: cover
-  // height: $hero-height
+  background: url('/images/building.jpg')
+  background-repeat: no-repeat
+  background-size: 100%
+  background-position: top
+  min-height: $hero-height
   text-align: center
   display: flex
   align-items: center
@@ -22,8 +24,10 @@
     display: flex
     flex-flow: row wrap
     align-items: center
+    height: inherit
   .hero
     margin-top: $gutter
+    min-height: 250px
     .hero-text-wr
       width: 100%
       // height: 100%
@@ -41,16 +45,17 @@
         -webkit-flex-direction: column
         flex-direction: column
         justify-content: center
+        color: $white
         h1
           // margin-bottom: 2*$gutter
-          $text-shadow-size: 1px
-          $text-shadow-color: rgba($white, 0.5)
           font-weight: bold
           font-size: 2rem
-          text-shadow: $text-shadow-color $text-shadow-size $text-shadow-size, $text-shadow-color -1*$text-shadow-size -1*$text-shadow-size, $text-shadow-color 1*$text-shadow-size -1*$text-shadow-size, $text-shadow-color -1*$text-shadow-size 1*$text-shadow-size
+          // $text-shadow-size: 1px
+          // $text-shadow-color: rgba($white, 0.5)
+          // text-shadow: $text-shadow-color $text-shadow-size $text-shadow-size, $text-shadow-color -1*$text-shadow-size -1*$text-shadow-size, $text-shadow-color 1*$text-shadow-size -1*$text-shadow-size, $text-shadow-color -1*$text-shadow-size 1*$text-shadow-size
 
         h1, p
-          color: $oil
+          color: $white
         p.white
           color: $white
           line-height: 0px
@@ -72,6 +77,7 @@
           margin-left: 0
           background-color: rgba($white, 0.8)
           border: 2px solid rgba($primary-color, .7)
+          color: $oil
           li
             margin-bottom: $gutter
             .hero-features-icon-wr
@@ -94,7 +100,7 @@
 
 
 .about-company
-  padding-top: $gutter
+  // padding-top: $gutter
   padding-bottom: $gutter
   .about-pads
     padding-top: 2*$gutter
@@ -106,15 +112,21 @@
   ul.partners-type-list
     padding: $gutter
     li
+      display: flex
       padding: $gutter 2*$gutter
       text-align: center
-      .icon-wr
+      align-items: center
+      i
+        margin: $gutter
         font-size: 2*$gutter
         color: $warning-color
         margin-bottom: $gutter
 
       span.description
-        font-size: bold
+        text-align: center
+        // font-weight: bold
+        font-size: 0.8*$gutter
+        width: 100%
 
 
 /* MailChimp Form Embed Code - Classic - 12/17/2015 v10.7
@@ -313,6 +325,32 @@
       color: #e85c41
     input.mce_inline_error
       border: 2px solid #e85c41
+
+
+
+
+ul.features-block-list-medium-down
+  padding-top:    2*$gutter
+  li
+    // margin-bottom: 2*$gutter
+    .hero-features-icon-wr
+      position: relative
+      i
+        position: absolute
+        top: 0.5*$gutter
+        left: 0.5*$gutter
+        color: darken($primary-color, 15%)
+        font-size: 1.8*$gutter
+
+    span
+      display: block
+    span.feature-title
+      color: darken($primary-color, 15%)
+      font-size: 1.25*$gutter
+    span.feature-text
+      font-size: .75*$gutter
+
+
 
 
 //

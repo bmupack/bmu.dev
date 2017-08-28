@@ -1,5 +1,10 @@
-const f = require('./js/foundation')
-var el = $('#collapsing-tabs')
-console.log(el);
-console.log(new Foundation.Tabs(el));
-$(document).foundation()
+// window.onload = function() {
+//   var path = window.location.href
+//   var els = $("dl.topbarsub dd a").map (function(i, e) {
+//     if ($(e)[0] == path) {
+//       $(e).parent().addClass('active')
+//     } else {
+//       $(e).parent().removeClass('active')
+//     };
+//   })
+// }
