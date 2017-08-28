@@ -100,7 +100,7 @@
 
 
 .about-company
-  // padding-top: $gutter
+  padding-top: 2*$gutter
   padding-bottom: $gutter
   .about-pads
     padding-top: 2*$gutter
@@ -352,6 +352,68 @@ ul.features-block-list-medium-down
 
 
 
+
+
+.row-gray
+  background-color: $silver
+
+h2.catalog-block
+  margin-bottom: $gutter
+  text-align: center
+ul.catalog-index-list
+  display: flex
+  flex-flow: row wrap
+  margin: 0
+  padding-top: $gutter
+  li.catalog-item-wr
+    padding-left: 0.5*$gutter
+    padding-right: 0.5*$gutter
+    padding-bottom: 1*$gutter
+    .catalog-item
+      background-color: $white
+      display: flex
+      flex-flow: row nowrap
+      padding: $gutter
+      align-items: stretch
+      box-shadow: 1px 1px 2px 0px rgba($oil, 0.25)
+      .catalog-item-title
+        $catalog-image-size: 75px
+        padding-top: 0.5*$gutter
+        a .catalog-item-image
+          height: $catalog-image-size
+          width: $catalog-image-size
+          background-size: cover
+          background-position: center
+          border-radius: 50%
+          background-repeat: no-repeat
+      .catalog-item-text
+        padding: 0 $gutter 0 $gutter
+        p
+          margin-bottom: 0
+        a span.neutral
+          color: darken($primary-color, 20%)
+        a:hover span.neutral
+          color: darken($primary-color, 50%)
+
+  // li.catalog-item
+  //   a.catalog-item-title
+      // display: block
+      // position: relative
+      // h4
+      //   // color: $white
+      //   // background-color: $warning-color
+      //   // position: absolute
+      //   margin: 0
+      //   bottom: 0
+      //   width: 100%
+      //   padding: $gutter
+      // .catalog-item-image
+      //   background-size: cover
+      //   background-position: center
+      //   border-radius: 50%
+      //   background-repeat: no-repeat
+      //   height: 200px
+      //   width: 200px
 
 //
 //

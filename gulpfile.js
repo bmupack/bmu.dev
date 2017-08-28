@@ -1,3 +1,4 @@
+var fs                  = require('fs');
 var gulp                = require('gulp');
 var gutil               = require("gulp-util");
 var haml                = require('gulp-haml-coffee');
@@ -95,8 +96,9 @@ gulp.task('watch', function() {
 gulp.task('views', function buildHTML() {
   gulp.src(paths.views)
     .pipe(plumberNotifier())
-    .pipe(data(function (file) {
-        return require('./' + paths.data[0]);
+    .pipe(data(function () {
+        let filePath = "./" + paths.data[0]
+        return JSON.parse(fs.readFileSync(filePath));
     }))
     .pipe(pug({}))
     .pipe(gulp.dest('build/'))

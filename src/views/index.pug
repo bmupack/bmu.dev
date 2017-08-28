@@ -149,7 +149,29 @@ block content
               span.feature-text
                 | Индивидуальные скидки для оптовых клиентов. Принимаем наличные и безналичные платежи
 
-  .row-block    
+  .row
+    .columns.large-12
+      h2.catalog-block Каталог
+  .row-large.row-gray
+    .row
+      .columns.large-12  
+        ul.catalog-index-list
+        ul.large-block-grid-2.medium-block-grid-2.small-block-grid-1.catalog-index-list
+          each category, key in catalog
+            li.catalog-item-wr
+              .catalog-item
+                .catalog-item-title
+                  a(href=category.link)
+                    .catalog-item-image(style = "background-image: url('" + category.image + "');")
+                .catalog-item-text
+                  h4= category.name 
+                  p 
+                    = category.description
+                    a(href=category.link) 
+                      | Подробнее 
+                      i.fa.fa-long-arrow-right
+
+  .row-large
     .row.about-company
       .columns.large-12
         h2.text-center О компании
