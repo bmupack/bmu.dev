@@ -1,9 +1,9 @@
 extends ../../mixins/catalog
 include ../../mixins/catalogList 
-include ../../mixins/topbarsub 
+include ../../mixins/topbar 
 
-block subtopbar
-  +topbarsub('catalog')
+block topbar
+  +topbar('catalog')
 
 block content
   +catalogList(catalog.celebration)

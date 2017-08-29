@@ -1,8 +1,8 @@
-extends ../mixins/layout.pug
-include ../mixins/topbarsub 
+extends ../mixins/layout
+include ../mixins/topbar 
 
-block subtopbar
-  +topbarsub('index')
+block topbar
+  +topbar('index')
   
 block content
   #hero-img.hero-about.hero-img.row-large

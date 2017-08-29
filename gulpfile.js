@@ -85,7 +85,7 @@ gulp.task('watch', function() {
     gulp.watch(paths.scripts, ['javascript']);
     gulp.watch(paths.haml,    ['haml']);
     gulp.watch(paths.sass,    ['sass']);
-    gulp.watch(paths.scss,    ['scss']);
+    // gulp.watch(paths.scss,    ['scss']);
     gulp.watch(paths.images,  ['image']);
     gulp.watch(paths.views,   ['views']);
     gulp.watch(paths.mixins,  ['views']);
