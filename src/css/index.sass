@@ -137,6 +137,14 @@
     position: relative
     text-align: left
     padding: 10px 0 10px 3%
+    input[type="text"], input[type="email"]
+      background-color: $primary-color
+      border: 2px solid $white
+      color: $white
+      padding: 1.5rem 0.5rem
+
+    input[type="text"]::placeholder, input[type="email"]::placeholder
+      color: $silver
   h2
     font-weight: bold
     padding: 0
@@ -365,6 +373,7 @@ ul.catalog-index-list
   flex-flow: row wrap
   margin: 0
   padding-top: $gutter
+  padding-bottom: $gutter
   li.catalog-item-wr
     padding-left: 0.5*$gutter
     padding-right: 0.5*$gutter
@@ -388,7 +397,6 @@ ul.catalog-index-list
           background-repeat: no-repeat
       .catalog-item-text
         h4
-          // font-weight: bold
           font-size: 1.25*$gutter
 
         padding: 0 $gutter 0 $gutter
