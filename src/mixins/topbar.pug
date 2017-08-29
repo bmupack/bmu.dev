@@ -5,13 +5,12 @@ mixin topbar(currentPage)
         a(href="/")
           img.brand-img(src="/images/smallLogo.jpg")
           h1.brand-name.hide-for-small-down Богатый Мир Упаковки
-
+      li.toggle-topbar.menu-icon
+        a.title-bar(data-responsive-toggle="responsive-menu", data-hide-for="medium")
+          i.fa-bars.fa(data-toggle="responsive-menu")
     section.navbar-right.top-bar-section
       ul.right
-        li.toggle-topbar.menu-icon
-          a.title-bar(data-responsive-toggle="responsive-menu", data-hide-for="medium")
-            i.fa-bars.fa(data-toggle="responsive-menu")
-            //- .title-bar-title Menu
+
         li(class=currentPage == 'index' ? 'active' : '')
           a(href="/" ) Главная 
         li(class=currentPage == 'production' ? 'active' : '')
@@ -32,24 +31,30 @@ mixin topbar(currentPage)
             a.fa.fa-map-o(href="https://www.google.ru/maps/place/%D0%91%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D0%B9+%D0%9C%D0%B8%D1%80+%D0%A3%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8/@58.540999,31.2655603,17z/data=!3m1!4b1!4m5!3m4!1s0x46beebad91b122b3:0x3870373e95ddffb2!8m2!3d58.540999!4d31.267749?hl=ru", target="_blank", onclick="yaCounter45549195.reachGoal('openMap'); return true;")
     
   .large-navbar#responsive-menu
-    ul.vertical.menu.drilldown(data-drilldown="")
-      li.toggle-topbar.menu-icon
+    .topbar-menu-header
+      .image-wr
+        .image-logo
+      .toggle-topbar.menu-icon
         a.title-bar(data-responsive-toggle="responsive-menu")
           i.fa-bars.fa(data-toggle="responsive-menu")
+
+    ul.topbar-menu-list
+      li(class=currentPage == 'index' ? 'active' : '')
+        a(href="/" ) Главная 
+      li(class=currentPage == 'production' ? 'active' : '')
+        a(href="/production.html") Продукция
+      li(class=currentPage == 'catalog' ? 'active' : '')
+        a(href="/catalog.html") Каталог
+      li(class=currentPage == 'contacts' ? 'active' : '')
+        a(href="/contacts.html") Контакты
+      li.hide-for-medium-down
+        span
+          a.fa-envelope-o.fa.navbar-email(href="mailto:sales@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmail'); return true;")
+      li.hide-for-medium-down
+        span 
+          a.fa.fa-phone.navbar-phone(href="tel:88162332132", onclick="yaCounter45549195.reachGoal('callPhone'); return true;")
       li
-        a(href="#") One
-      li
-        a(href="#") Two
-        ul.menu.vertical.nested
-          li
-            a(href="#") Two A
-          li
-            a(href="#") Two B
-          li
-            a(href="#") Two C
-          li
-            a(href="#") Two D
-      li
-        a(href="#") Three
-      li
-        a(href="#") Four
+        span.hide-for-medium-down.navbar-text.hide.navbar-text-addr.right
+          //- | ул. Великая, 22, В. Новгород  &nbsp;
+          a.fa.fa-map-o(href="https://www.google.ru/maps/place/%D0%91%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D0%B9+%D0%9C%D0%B8%D1%80+%D0%A3%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8/@58.540999,31.2655603,17z/data=!3m1!4b1!4m5!3m4!1s0x46beebad91b122b3:0x3870373e95ddffb2!8m2!3d58.540999!4d31.267749?hl=ru", target="_blank", onclick="yaCounter45549195.reachGoal('openMap'); return true;")
+  

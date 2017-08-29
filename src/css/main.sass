@@ -7,15 +7,50 @@
 @import 'index'
 @import 'contacts'
 
+.top-bar .toggle-topbar.menu-icon a
+  margin-top: 1*$gutter
+  font-size: 1.5*$gutter
+  padding-right: 2*$gutter
 .large-navbar
   position: absolute
   top: 0
   bottom: 0
   left: 0
   right: 0
-  background-color: $warning-color
+  background-color: $white
   z-index: 999
   display: none
+  .topbar-menu-header
+    height: 80px
+    display: flex
+    padding: .5*$gutter $gutter
+    margin-bottom: $gutter
+    align-items: center
+    justify-content: space-between
+
+    .image-wr
+      padding-top: $gutter
+      height: 6*$gutter
+      .image-logo
+        width: 90px
+        background-image: url("/images/smallLogo.jpg")
+        background-size: contain
+        background-repeat: no-repeat
+        height: inherit
+    .toggle-topbar
+      i
+        margin-top: 2*$gutter
+        margin-right: $gutter
+        font-size: 1.5*$gutter
+  ul.topbar-menu-list
+    margin: 0
+    li
+      padding: .5*$gutter $gutter
+      width: 100%
+    li:hover
+      background-color: $vapor
+
+
 
 html
   box-sizing: border-box
