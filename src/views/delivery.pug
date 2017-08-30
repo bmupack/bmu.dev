@@ -1,0 +1,43 @@
+extends ../mixins/layout
+include ../mixins/topbar 
+
+block topbar
+  +topbar('delivery')
+  
+block content
+  .row.delivery-block
+    .columns.large-6
+      .delivery-about
+        h1 Доставка
+        p Богатый Мир Упаковки заботится о своих клиентах, поэтому предоставляет возможность доставки, в том числе бесплатной. 
+        p Для доставки мы используем собственный транспорт, а так же пользуемся услугами транспортных компаний.
+        h2 Условия бесплатной доставки
+        .delivery-free
+          .delivery-title-point Великий Новгород 
+          .delivery-point 
+            | Доставка по Великому Новгороду осуществляется при заказе от 2'000 
+            i.fa.fa-rub
+        .delivery-free
+          .delivery-title-point Новгородская область 
+          .delivery-point 
+            | Мы осуществляем доставку в Окуловку, Валдай, Боровичи, Крестцы. Минимальная сумма заказа от 5'000 
+            i.fa.fa-rub . 
+            |  Прочие населенные пункты, расположенные по маршуру, могут также участвовать в программе бесплатной доставки. 
+        .delivery-free
+          .delivery-title-point Санкт-Петербург
+          .delivery-point 
+            | Доставка в Санкт-Петербург осуществляется при заказе от 100'000 
+            i.fa.fa-rub 
+        .delivery-free
+          .delivery-title-point Другие регионы
+          .delivery-point Доставка в другие регионы осуществляется по согласованию.
+        ul.menu
+          li
+            a(href="/production.html") Производство
+          li
+            a(href="/catalog.html") Каталог
+          li
+            a(href="/contacts.html") Контакты
+    .columns.large-6
+      .delivery-bg-image-wr
+        .delivery-bg-image
