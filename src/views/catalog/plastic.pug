@@ -3,7 +3,7 @@ include ../../mixins/catalogList
 include ../../mixins/topbar 
 
 block topbar
-  +topbar('catalog')
+  +topbar('catalog', catalog.plastic.name)
   
 block content
   +catalogList(catalog.plastic)

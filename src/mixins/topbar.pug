@@ -1,4 +1,4 @@
-mixin topbar(currentPage)
+mixin topbar(currentPage, subcategoryPage)
   nav.top-bar(data-topbar="", role="navigation")
     ul.title-area
       li.brand.name
@@ -15,8 +15,14 @@ mixin topbar(currentPage)
           a(href="/" ) Главная 
         li(class=currentPage == 'production' ? 'active' : '')
           a(href="/production.html") Продукция
-        li(class=currentPage == 'catalog' ? 'active' : '')
+        li.has-dropdown(class=currentPage == 'catalog' ? 'active' : '')
           a(href="/catalog.html") Каталог
+          ul.dropdown
+            each category, key in catalog
+              li(class=subcategoryPage == category.name ? 'active' : '')
+                a(href=category.link)
+                  = category.name 
+              
         li(class=currentPage == 'contacts' ? 'active' : '')
           a(href="/contacts.html") Контакты
         li.hide-for-medium-down
