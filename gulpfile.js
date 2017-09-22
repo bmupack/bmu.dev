@@ -60,7 +60,6 @@ gulp.task('sass', function () {
     .pipe(plumberNotifier())
     .on('error', sass.logError)
     .pipe(gulp.dest('build/css'))
-    .pipe(notify("SASS Bundling done."))
     .pipe(connect.reload());
 });
 
