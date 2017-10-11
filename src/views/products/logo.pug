@@ -1,0 +1,393 @@
+extends ../../mixins/layout
+include ../../mixins/topbar
+
+block head
+  - var title = "Производство БМУ"
+  - var description = "Производство фасовочных и мусорных пакетов. Фасовочные пакеты в блоке, рулонах. Вкладыши в короб."
+  - var keywords = "пакеты, с логотипом, майка, с вырубной ручкой, одежды, колес, Производство, полиэтиленовые, Пакеты, пакеты в рулонах, в блоках, для мусора, шпагат, бутылки, чековая лента, перчатки, канцелярские, хозяйственные , оптовая база, пленка, стрейч, туалетная бумага, ПНД, ПВД, пакеты майка, скотч, упаковка, упаковочка, бму"
+  +head(title, description, keywords)
+
+block topbar
+  +topbar('production')
+
+block content
+  .row
+    .columns.medium-12
+      .hero-product-logo
+        h2.text-center.subheader Идеальное продолжение Вашего фирменного стиля
+        h1.text-center Упаковка с логотипом
+        p 
+          | Ключевой момент общения с Вашим брендом — упаковка.
+          br 
+          | Именно она несет в себе максимум первичной информации о продукте: его качество, ценовой диапазон и преимущества. 
+  .row
+    .columns.medium-6
+      h3 Зачем нужна упаковка с печатью?
+      hr.mini
+      p Правильная упаковка решает огромное количество задач. Она стала сильнейшим аргументом в конкурентной борьбе. Она предоставляет контакты. Именно она повышает узнаваемость бренда и снижает затраты на рекламу!
+
+    //- .columns.medium-6
+    //-   h3 Какую упаковку выбрать?
+    //-   hr.mini
+    //-   p Пакет «Майка». Самый дешевый и популярный вариант, идеально подходит для упаковки продовольственных товаров. 
+    //-   p Пакет с вырубной ручкой. . 
+
+
+  .blue-background.row-large
+    .product-container.row
+      .columns.large-12
+          table.fullwidth.hover.table.unstriped
+            thead
+              tr
+              th Вид
+              th Ширина
+              th Высота
+              th Рисунок
+              th Материал и толщина
+            tbody
+              tr
+                td С прорубной ручкой
+                td 200 — 800 мм
+                td 275 — 800 мм
+                td 1 — 4 цвета
+                td
+                  ul
+                    li
+                      b ПНД 
+                      span толщина 14 — 50 микрон
+                    li
+                      b ПВД 
+                      span толщина 30 — 80 микрон
+
+              tr
+                td Пакет «Майка»
+                td 240 — 440 мм
+                td 370 — 800 мм
+                td 1 — 4 цвета
+                td
+                  ul
+                    li
+                      b ПНД 
+                      span толщина 14 — 30 микрон
+                    li
+                      b ПВД 
+                      span  толщина 30 — 50 микрон
+                    li
+                      b ПВД двухслойный
+                      span  толщина 40 — 45 микрон
+              tr
+                td Пакет для одежды
+                td 400 — 950 мм
+                td до 1500 мм
+                td 1 — 4 цвета
+                td
+                  ul
+                    li
+                      b ПНД 
+                      span толщина 15 — 50 микрон
+                    li
+                      b ПВД 
+                      span толщина 30 — 100 микрон
+              tr
+                td Пакет для колес
+                td 900 — 1200 мм
+                td 900 — 1500 мм
+                td 1 — 4 цвета
+                td
+                  ul
+                    li
+                      b ПНД 
+                      span толщина 14 — 30 микрон
+
+  //- .hero-manufacture
+  //-   .hero-manufacture-img.row-large
+  //-     .hero-img-manufacture-alpha
+  //-       .manufacture-flex.row
+  //-         .columns.large-12.medium-12.small-12
+  //-           .hero-text-wr
+  //-             .hero-text
+  //-               p.lead
+  //-         .columns.large-8.medium-12.small-12
+  //-           .hero-text-wr
+  //-             .hero-text
+  //-               .girl-call-wr
+  //-                 .girl-call
+  //-                   .girl-call-image-wr
+  //-                     .girl-call-image
+  //-                   .girl-call-text
+  //-
+  //-                     h1 Полиэтиленовая упаковка
+  //-                     //- h5.alert 5 минут! Рассчитаю индивидуальные цены!
+  //-                     h4 Попробуй найти дешевле!
+  //-                     p.first-par
+  //-                       span Привезу бесплатно. Приму заказ. Дам консультацию.
+  //-                     p.lead
+  //-                       span Поставки в Санкт-Петербург, Москву и города СЗФО
+  //-                     a.alert.button.text-center(href="tel:88162903620", onclick="yaCounter45549195.reachGoal('callManufacture'); return true;")
+  //-                       i.fa.fa-phone
+  //-                       b  Получить прайс по телефону +7 (8162) 90-36-20
+  //-                     ul.inline-list.products-list
+  //-                       li Пакеты
+  //-                       li Рулоны
+  //-                       li Для мусора
+  //-                       li Вкладыши
+  //-         .columns.large-4.medium-12.small-12
+  //-           .hero-text-wr
+  //-             .hero-text
+  //-               ul.hero-features
+  //-                 li.row
+  //-                   .columns.large-2.medium-1.small-2
+  //-                     .hero-features-icon-wr
+  //-                       i.fa.fa-truck
+  //-                   .columns.large-10.medium-11.small-10
+  //-                     span.feature-title
+  //-                       b Бесплатная
+  //-                       |  доставка
+  //-                       a(href="delivery.html") *
+  //-                     span.feature-text
+  //-                       | По В. Новгороду — от 2'000
+  //-                       i.fa.fa-rub
+  //-                       br
+  //-                       | По области — от 5'000
+  //-                       i.fa.fa-rub
+  //-                       br
+  //-                       | В Санкт-Петербург — от 100'000
+  //-                       i.fa.fa-rub
+  //-                       br
+  //-                       | В другие регионы по согласованию
+  //-                     small
+  //-                       a(href="delivery.html") * подробности
+  //-
+  //-
+  //-
+  //-                 li.row
+  //-                   .columns.large-2.medium-1.small-2
+  //-                     .hero-features-icon-wr
+  //-                       i.fa.fa-industry
+  //-                   .columns.large-10.medium-11.small-10
+  //-                     span.feature-title
+  //-                       b Производитель
+  //-                     span.feature-text Цены ниже — поставки напрямую.
+  //-                 li.row
+  //-                   .columns.large-2.medium-1.small-2
+  //-                     .hero-features-icon-wr
+  //-                       i.fa.fa-percent
+  //-                   .columns.large-10.medium-11.small-10
+  //-                     span.feature-title
+  //-                       b Скидки
+  //-                     span.feature-text Индивидуальные цены для оптовых клиентов. Любая форма оплаты.
+  //-                 li.row
+  //-                   .columns.large-2.medium-1.small-2
+  //-                     .hero-features-icon-wr
+  //-                       i.fa.fa-magic
+  //-                   .columns.large-10.medium-11.small-10
+  //-                     span.feature-title Заказные позиции
+  //-                     span.feature-text
+  //-                       | Изготовим упаковку любого
+  //-                       b размера, микронности, вложения / намотки
+  //-                       |  по Вашему техническому заданию.
+  //- .blue-background.row-large
+  //-   .product-container.row
+  //-     .columns.large-12
+  //-       h2.manufacture-header Популярные продукты
+  //-       p.manufacture-text-partner
+  //-         | Воможности нашего производства позволяют поддерживать широкую номенкулатуру фасовочных пакетов ПНД, в том числе в рулонах.
+  //-         br
+  //-         | По
+  //-         b индивидуальным
+  //-         |  заказам мы производим упаковку произвольных размеров, тощины, количества в пачке и намотки. Есть возможность нанесения логотипа.
+  //-     .columns.large-12
+  //-       table.fullwidth.hover.table.unstriped
+  //-         thead
+  //-           tr
+  //-             td
+  //-             td Размеры
+  //-             td.hide-for-small
+  //-         tbody
+  //-           tr
+  //-             td Пакет фасовочный с фальцем
+  //-             td 18х27, 22х32, 22х35, 22х38, 22х50, 26х35, Заказные
+  //-             td.hide-for-small 6мкм — 9мкм
+  //-           tr
+  //-             td Пакет фасовочный без фалцьев
+  //-             td 24х37, 25х40, 30х40, 30х45, 30х60, 50х80, Заказные
+  //-             td.hide-for-small 6мкм — 15мкм
+  //-           tr
+  //-             td Фасовочные пакеты в рулоне
+  //-             td Заказные (произвольный размер)
+  //-             td.hide-for-small 6мкм — 10мкм
+  //-           tr
+  //-             td Фасовочные пакеты в рулоне (втулка)
+  //-             td Заказные (произвольный размер)
+  //-             td.hide-for-small Заказные (произвольный)
+  //-           tr
+  //-             td Пакет для мусора
+  //-             td 10л — 110л
+  //-             td.hide-for-small Заказные (произвольный)
+  //-           tr
+  //-             td Пакеты-вкладыши в гофрокороба
+  //-             td Заказные (произвольный размер)
+  //-             td.hide-for-small Заказные (произвольный)
+  //-       p
+  //-         | Не нашли нужного? Посмотрите
+  //-         a.link-on-primary(href="/catalog.html") весь каталог
+  //-         |  или Позвоните нам!
+  //-         a.link-on-primary(href="tel:88162332131", onclick="yaCounter45549195.reachGoal('callPhone'); return true;")
+  //-           span +7 8162 33-21-31
+  //-           i.fa.fa-phone
+  //-
+  //- .custom-product-block.row-large
+  //-   .row
+  //-     .columns.large-12
+  //-       //- h3.text-center Как сделать заказ?
+  //-
+  //-       ul.custom-product-task
+  //-         li.text-wr
+  //-           .num 1
+  //-           .text Заявка
+  //-         li.arrow
+  //-           i.fa.fa-chevron-right
+  //-         li.text-wr
+  //-           .num 2
+  //-           .text Расчет
+  //-         li.arrow
+  //-           i.fa.fa-chevron-right
+  //-         li.text-wr
+  //-           .num 3
+  //-           .text Оплата
+  //-         li.arrow
+  //-           i.fa.fa-chevron-right
+  //-         li.text-wr
+  //-           .num 4
+  //-           .text Производство
+  //-         li.arrow
+  //-           i.fa.fa-chevron-right
+  //-         li.text-wr
+  //-           .num 5
+  //-           .text Доставка
+  //-         li.arrow
+  //-           i.fa.fa-chevron-right
+  //-         li.text-wr
+  //-           .num 6
+  //-           .text Обратная связь
+  //-       //- .row
+  //-       //-   .columns.large-6.large-offset-3.medium-12.small-12
+  //-       //-     ul.custom-product-task-items
+  //-       //-       li.text-wr
+  //-       //-         .num 1
+  //-       //-         .text
+  //-       //-           b Заявка.
+  //-       //-           |  Обычно, заявка на заказ включает в себя параметры пакета и упаковки: размер, толщина, количество, вид и стилизация упаковки.
+  //-       //-
+  //-       //-       li.text-wr
+  //-       //-         .num 2
+  //-       //-         .text
+  //-       //-           b Расчет.
+  //-       //-           |  Мы рассчитываем стоимость заказа. Для типового заказа — пара минут.
+  //-       //-
+  //-       //-       li.text-wr
+  //-       //-         .num 3
+  //-       //-         .text
+  //-       //-           b Оплата.
+  //-       //-           |  Любая форма оплаты.
+  //-       //-       li.text-wr
+  //-       //-         .num 4
+  //-       //-         .text
+  //-       //-           b Производство.
+  //-       //-           |  Заказ отправляется на наше производство.
+  //-       //-
+  //-       //-       li.text-wr
+  //-       //-         .num 5
+  //-       //-         .text
+  //-       //-           b Доставка.
+  //-       //-           |  Готовая продукция отправляется заказчику.
+  //-       //-
+  //-       //-
+  //-       //-       li.text-wr
+  //-       //-         .num 6
+  //-       //-         .text
+  //-       //-           b Обратная связь.
+  //-       //-           |  Мы всегда готовы услышать отзывы о нашей продукции!
+  //-       //-
+  //-       //-
+  //-       //- p.text-center
+  //-       //-   a.alert.button.text-center(href="tel:88162903620", onclick="yaCounter45549195.reachGoal('callManufacture'); return true;")
+  //-       //-     i.fa.fa-phone
+  //-       //-     |  Позвонить +7 (8162) 90-36-20
+  //-
+  //-
+  //-
+  //- .manufacture-partner-block.row
+  //-   .columns.large-12
+  //-     h2.manufacture-header Зарабатывайте больше!
+  //-     .manufacture-text-partner
+  //-       p
+  //-         | Мы трепетно отслеживаем цены на рынке и всегда рады сделать выгодные предложения!
+  //-       p
+  //-         | Мы
+  //-         i любим
+  //-         |  своих клиентов и всегда рады
+  //-         strong взаимовыгодному
+  //-         |  сотрудничеству.
+  //-   .columns.large-12
+  //-     ul.large-block-grid-2.manufacture-advantage.medium-block-grid-2.small-block-grid-1
+  //-       li
+  //-         .columns.large-1
+  //-           i.fa.fa-chevron-down
+  //-         .columns.large-11
+  //-           h4 Качество
+  //-           p
+  //-             | Оригинальная упаковка с нашим логотипом — гарантия качества. Мы проводим Контроль качества продукции, используем Современное оборудование, для Вас трудится Высококвалифицированный персонал.
+  //-       li
+  //-         .columns.large-1
+  //-           i.fa.fa-truck
+  //-         .columns.large-11
+  //-           h4 Доставка
+  //-           p
+  //-             | Мы осуществляем
+  //-             strong бесплатную
+  //-             |  доставку в Санкт-Петербург при заказе от 100'000
+  //-             span.fa.fa-rub ,
+  //-             |  по Великому Новгороду от 2'000
+  //-             span.fa.fa-rub ,
+  //-             |  по Новгородской области от 5'000
+  //-             span.fa.fa-rub .
+  //-             |  Возможна доставка в Москву, города Северо-Запада и другие регионы.
+  //-       li
+  //-         .columns.large-1
+  //-           i.fa.fa-shopping-cart
+  //-         .columns.large-11
+  //-           h4 В наличии и на заказ
+  //-           p
+  //-             | Прямые поставки со складов нашего производства и быстрое производство индивидуальной упаковки на заказ.
+  //-       li
+  //-         .columns.large-1
+  //-           i.fa.fa-file-image-o
+  //-         .columns.large-11
+  //-           h4 Индивидуальность
+  //-           p
+  //-             | Производство упаковки под Вашим брендом, необходимого размера, микронности, намотки / вложения — по Вашему техническому заданию.
+  //-       li
+  //-         .columns.large-1
+  //-           i.fa.fa-certificate
+  //-         .columns.large-11
+  //-           h4 Сертификация и Штрих коды
+  //-           p Наличие сертификатов на все виды товаров. Продукции присвоены штрих-коды.
+  //-       li
+  //-         .columns.large-1
+  //-           i.fa.fa-credit-card
+  //-         .columns.large-11
+  //-           h4 Оплата
+  //-           p Безналичный и наличный расчет.
+  //- .row
+  //-   .columns.large-12
+  //-     ul.button-group.even-1.text-center
+  //-       li
+  //-         a.alert.button.small.text-center(href="tel:88162903620", onclick="yaCounter45549195.reachGoal('callManufacture'); return true;")
+  //-           i.fa.fa-phone
+  //-           b Сделать заказ +7 (8162) 90-36-20
+  //-       li
+  //-         a.alert.button.small.text-center(href="mailto:sales@bmupack.ru", onclick="yaCounter45549195.reachGoal('sendEmailManufacture'); return true;")
+  //-           i.fa.fa-envelope-o
+  //-           b Отправить заявку sales@bmupack.ru
+  //-
